@@ -223,11 +223,11 @@ resources.py:
         icons/default-widget.svg: false
         def `icon_glob`:
             _*: false
-        def `is_icon_glob`:
-            _*: false
+            -symbolic: false
         def `get`:
             .svg: false
             current-color-scheme: false
+            .*-symbolic\.\w+$: false
     def `load_styled_svg_icon`:
         icons/{name}: false
 application/aboutdialog.py:
@@ -2034,7 +2034,7 @@ document/schemeedit.py:
         def `__toggleNewTextAnnotation`:
             Canceled new text annotation: false
         def `__triggerNewTextAnnotation`:
-              text/markdown: false
+            text/markdown: false
         def `__onHelpAction`:
             help://search?: false
             id: false
@@ -2268,10 +2268,13 @@ gui/svgiconengine.py:
 .ColorScheme-Background {{
     color: {background};
 }}
+.ColorScheme-ViewBackground {{
+    color: {base};
+}}
 .ColorScheme-Highlight {{
     color: {highlight};
 }}
-.ColorScheme-Disabled-Text {{
+.ColorScheme-DisabledText {{
     color: {disabled_text};
 }}
 .ColorScheme-Contrast {{
@@ -2279,6 +2282,15 @@ gui/svgiconengine.py:
 }}
 .ColorScheme-Complement {{
     color: {complement};
+}}
+.ColorScheme-PositiveText {{
+    color:#27ae60;
+}}
+.ColorScheme-NeutralText {{
+    color:#f67400;
+}}
+.ColorScheme-NegativeText {{
+    color:#da4453;
 }}
 ': false
     def `replace_css_style`:
