@@ -388,7 +388,7 @@ application/application.py:
 application/canvasmain.py:
     class `CanvasMainWindow`:
         def `__init__`:
-            untitled: null
+            untitled: 未命名
             mainwindow/recent-items: null
             title: null
             path: null
@@ -506,24 +506,24 @@ application/canvasmain.py:
             canvas-addons-action: null
             Manage add-ons.: 管理插件。
             &Log: 日志(&L)
-            Show application standard output.: null
-            Minimize: null
+            Show application standard output.: 显示应用程序标准输出。
+            Minimize: 最小化
             Ctrl+M: null
             darwin: null
             Zoom: 缩放
             application-zoom: null
-            Freeze: null
+            Freeze: 冻结
             Shift+F: null
             signal-freeze-action: null
-            Freeze signal propagation (Shift+F): null
+            Freeze signal propagation (Shift+F): 冻结信号传播（Shift+F）
             Pause.svg: null
-            Expand Tool Dock: null
+            Expand Tool Dock: 展开工具停靠区
             toggle-tool-dock-expand: null
             Ctrl+Shift+D: null
             Show Workflow Margins: 显示工作流边距
-            Show margins around the workflow view.: null
+            Show margins around the workflow view.: 显示工作流视图周围的边距。
             Display Widgets on Top: 组件置顶显示
-            Widgets are always displayed above other windows.: null
+            Widgets are always displayed above other windows.: 组件始终显示在其他窗口上方。
         def `setup_menu`:
             darwin: null
             &File: 文件(&F)
@@ -557,7 +557,7 @@ application/canvasmain.py:
             quick-help/visible: null
             widgets-float-on-top: null
         def `__update_window_title`:
-            Untitled [*]: null
+            Untitled [*]: 未命名 [*]
         def `setWindowFilePath`:
             def `icon_for_path`:
                 QIcon: null
@@ -933,8 +933,8 @@ application/schemeinfo.py:
     class `SchemeInfoEdit`:
         def `__setupUi`:
             untitled: null
-            Title: null
-            Description: null
+            Title: 标题
+            Description: 描述
         def `setScheme`:
             untitled: null
         def `commit`:
@@ -942,26 +942,26 @@ application/schemeinfo.py:
     class `SchemeInfoDialog`:
         def `__setupUi`:
             Workflow Info: 工作流信息
-            <h3>{0}</h3>: null
+            <h3>{0}</h3>: <h3>{0}</h3>
             heading: null
             auto-show-container: null
-            Show when I make a New Workflow.: null
+            Show when I make a New Workflow.: 新建工作流时显示
             auto-show-check: null
-            'You can also edit Workflow Info later ': null
-            (File -> Workflow Info).: null
+            'You can also edit Workflow Info later ': 你也可以稍后通过
+            (File -> Workflow Info).: （文件 -> 工作流信息）进行编辑。
             auto-show-info: null
 application/settings.py:
     class `UserSettingsModel`:
         def `__init__`:
-            Name: null
-            Status: null
-            Type: null
-            Value: null
+            Name: 名称
+            Status: 状态
+            Type: 类型
+            Value: 值
         def `data`:
-            Default: null
-            User: null
+            Default: 默认
+            User: 用户
         def `setData`:
-            Failed to set value (%r) for key %r: null
+            Failed to set value (%r) for key %r: 无法为键 %r 设置值（%r）
     _State: null
     visible: null
     position: null
@@ -1657,15 +1657,15 @@ document/editlinksdialog.py:
         def `addLink`:
             %r is not an output channel of %r: null
             %r is not an input channel of %r: null
-            Click to remove the link.: null
+            Click to remove the link.: 单击可移除此连线。
         def `removeLink`:
             No such link {0.name!r} -> {1.name!r}.: null
         def `__updateState`:
             <center><b>{0}<b></center>: null
         def `__updateAnchorState`:
-            Click and drag to connect widgets!: null
-            No compatible input channel.: null
-            No compatible output channel.: null
+            Click and drag to connect widgets!: 单击并拖动以连接组件！
+            No compatible input channel.: 没有兼容的输入通道。
+            No compatible output channel.: 没有兼容的输出通道。
     class `EditLinksNode`:
         def `setSchemeNode`:
             <div align="{align}">: null
@@ -1708,7 +1708,7 @@ document/interactions.py:
         Optional[QWidget]: null
         Tuple[int, List[OIPair], List[OIPair]]: null
         Constructing a Link Editor dialog.: null
-        Edit Links: null
+        Edit Links: 编辑连线
         Executing a Link Editor Dialog.: null
     class `NewNodeAction`:
         def `create_new`:
