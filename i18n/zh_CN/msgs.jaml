@@ -1,0 +1,3811 @@
+__main__.py:
+    __main__: null
+config.py:
+    T: null
+    0.0: null
+    orangecanvas.widgets: null
+    orangecanvas.addon: null
+    keywords: null
+    orange: null
+    add-on: null
+    orangecanvas.examples: null
+    def `standard_location`:
+        Use QStandardPaths.writableLocation: null
+    class `Config`:
+        def `core_packages`:
+            orange-canvas-core >= 0.1a, < 0.2a: null
+        FAQ: 常见问题
+        Bug Report: 问题反馈
+        Quick Start: 快速开始
+        Documentation: 文档
+        Screencasts: 视频教程
+        Feedback: 反馈
+        Donate: 捐赠
+    class `Default`:
+        biolab.si: null
+        Orange Canvas Core: null
+        def `application_icon`:
+            icons/orange-canvas.svg: null
+        def `splash_screen`:
+            icons/orange-canvas-core-splash.svg: null
+            svg: null
+            .: null
+            '#231F20': null
+        def `core_packages`:
+            orange-canvas-core >= 0.0, < 0.1a: null
+    def `init`:
+        Activating configuration for {}: null
+    startup/show-splash-screen: null
+    Show splash screen on startup: 启动时显示启动画面
+    startup/show-welcome-screen: null
+    Show Welcome screen on startup: 启动时显示欢迎页
+    startup/load-crashed-workflows: null
+    Load crashed scratch workflows on startup: 启动时加载崩溃恢复的临时工作流
+    application/language: null
+    English: null
+    Application language: 应用语言
+    application/last-used-language: null
+    If different from application/language, widget discovery is forced: null
+    stylesheet: null
+    QSS stylesheet to use: 使用的 QSS 样式表
+    schemeinfo/show-at-new-scheme: null
+    Show Workflow Properties when creating a new Workflow: 创建新工作流时显示工作流属性
+    mainwindow/scheme-margins-enabled: null
+    Show margins around the workflow view: 在工作流视图四周显示边距
+    mainwindow/show-scheme-shadow: null
+    Show shadow around the workflow view: 在工作流视图周围显示阴影
+    mainwindow/toolbox-dock-exclusive: null
+    Should the toolbox show only one expanded category at the time: null
+    mainwindow/toolbox-dock-floatable: null
+    Is the canvas toolbox floatable (detachable from the main window): null
+    mainwindow/toolbox-dock-movable: null
+    Is the canvas toolbox movable (between left and right edge): null
+    mainwindow/toolbox-dock-use-popover-menu: null
+    'Use a popover menu to select a widget when clicking on a category ': null
+    button: null
+    mainwindow/widgets-float-on-top: null
+    Float widgets on top of other windows: null
+    mainwindow/number-of-recent-schemes: null
+    Number of recent workflows to keep in history: 历史中保留的最近工作流数量
+    schemeedit/show-channel-names: null
+    Show channel names: 显示通道名称
+    schemeedit/show-link-state: null
+    Show link state hints.: null
+    schemeedit/enable-node-animations: null
+    Enable node animations.: 启用节点动画。
+    schemeedit/freeze-on-load: null
+    Freeze signal propagation when loading a workflow.: 加载工作流时冻结信号传播。
+    quickmenu/trigger-on-double-click: null
+    Show quick menu on double click.: 双击时显示快捷菜单。
+    quickmenu/trigger-on-right-click: null
+    Show quick menu on right click.: 右键时显示快捷菜单。
+    quickmenu/trigger-on-space-key: null
+    Show quick menu on space key press.: 按空格键时显示快捷菜单。
+    quickmenu/trigger-on-any-key: null
+    quickmenu/show-categories: null
+    Show categories in quick menu.: 在快捷菜单中显示分类。
+    logging/level: null
+    Logging level: 日志级别
+    logging/show-on-error: null
+    Show log window on error: null
+    logging/dockable: null
+    Allow log window to be docked: null
+    help/open-in-external-browser: null
+    Open help in an external browser: 在外部浏览器中打开帮助
+    add-ons/allow-conda: null
+    Install add-ons with conda: 使用 conda 安装插件
+    add-ons/pip-install-arguments: null
+    Arguments to pass to "pip install" when installing add-ons.: null
+    network/http-proxy: null
+    HTTP proxy.: null
+    network/https-proxy: null
+    HTTPS proxy.: null
+    network/use-certs: null
+    Use system certificates.: null
+    def `log_dir`:
+        darwin: null
+        ~/Library/Logs: null
+    def `widget_settings_dir`:
+        "'widget_settings_dir' is deprecated.": null
+        widgets: null
+    def `open_config`:
+        open_config was never used and will be removed in the future: null
+    def `save_config`:
+        save_config was never used and will be removed in the future: null
+main.py:
+    class `Main`:
+        def `parse_arguments`:
+            -style: null
+        def `splash_screen`:
+            startup/show-splash-screen: null
+            Helvetica: null
+            '#FFD39F': null
+        def `run_discovery`:
+            widget-registry.pck: null
+            rb: null
+            wb: null
+        def `run`:
+            'Loading paths from argv: %s': null
+            ' ,': null
+            def `record_path`:
+                'Path from FileOpen event: %s': null
+            def `open_request`:
+                pydevd.py: null
+                run_profiler.py: null
+            Restarting via exit code 96.: null
+        def `setup_logging`:
+            '%(asctime)s:%(levelname)s:%(name)s: %(message)s': null
+            -log-stream: null
+            canvas.log: null
+            w: null
+        def `setup_main_window`:
+            darwin: null
+        def `main_window_stylesheet`:
+            orange.qss: null
+            Switching default stylesheet to darkorange: null
+            darkorange.qss: null
+            Adding search path %r for prefix, %r: null
+        def `show_welcome_screen`:
+            startup/show-welcome-screen: null
+        def `setup_sys_redirections`:
+            -stdout: null
+            -stderr: null
+    def `fix_win_pythonw_std_stream`:
+        win32: null
+        pythonw.exe: null
+        w: null
+        utf-8: null
+        ignore: null
+    def `fix_set_proxy_env`:
+        fix_set_proxy_env is deprecated: null
+        http: null
+        https: null
+        network/: null
+        -proxy: null
+        _proxy: null
+    def `fix_macos_nswindow_tabbing`:
+        "'{__name__}.fix_macos_nswindow_tabbing()' is deprecated. Use ": null
+        "'orangecanvas.gui.utils.macos_set_nswindow_tabbing()' instead": null
+    def `breeze_dark`:
+        {__name__}'.breeze_dark()' has been moved to styles package.: null
+    def `make_file_handler`:
+        w: null
+        utf-8: null
+    def `arg_parser`:
+        def `log_level`:
+            0: null
+            1: null
+            2: null
+            3: null
+            4: null
+            5: null
+            Invalid log level {!r}: null
+        'usage: %(prog)s [options] [workflow_file]': null
+        --no-discovery: null
+        store_true: null
+        Don't run widget discovery (use full cache instead): null
+        --force-discovery: null
+        Force full widget discovery (invalidate cache): null
+        --no-welcome: null
+        Don't show welcome dialog.: null
+        --no-splash: null
+        Don't show splash screen.: null
+        -l: null
+        --log-level: null
+        Logging level (0, 1, 2, 3, 4): null
+        --stylesheet: null
+        Application level CSS style sheet to use: null
+        --config: null
+        Configuration namespace: null
+        --no-shadow: null
+        Disable drop shadows in the UI: null
+        Deprecated: null
+        --qt: null
+        'Additional arguments for QApplication.\nDeprecated. ': null
+        List all arguments as normally to pass it to QApplication.: null
+        --style: null
+        'QStyle to use (deprecated: use -style)': null
+    __main__: null
+resources.py:
+    def `package`:
+        .: null
+    def `search_paths_from_description`:
+        search_paths: null
+    class `resource_loader`:
+        def `split_prefix`:
+            :: null
+        def `is_valid_prefixed`:
+            :: null
+        def `open`:
+            rb: null
+            Cannot find %r: null
+    class `icon_loader`:
+        icons/default-widget.svg: null
+        def `icon_glob`:
+            _*: null
+            -symbolic: null
+        def `get`:
+            .svg: null
+            current-color-scheme: null
+            .*-symbolic\.\w+$: null
+    def `load_styled_svg_icon`:
+        icons/{name}: null
+application/aboutdialog.py:
+    '\
+<center>
+<h4>{name}</h4>
+<p>Version: {version}</p>
+</center>
+': null
+    class `AboutDialog`:
+        def `__init__`:
+            darwin: null
+application/addons.py:
+    def `description_rich_text`:
+        Description: null
+        Summary: null
+        Description-Content-Type: null
+        text/x-rst: null
+        text/plain: null
+    class `ActionItem`:
+        def `data`:
+            Update: null
+            Install: null
+            Uninstall: null
+    class `PluginsModel`:
+        def `__init__`:
+            Name: null
+            Version: null
+            Action: null
+        def `createRow`:
+            Summary: null
+            <: null
+            ->: null
+            {} {} {}: null
+    class `AddonManagerDialog`:
+        def `__init__`:
+            top-hbox-layout: null
+            filter-edit: null
+            Filter...: 筛选...
+            Add more...: 添加更多...
+            Add an add-on not listed below: 添加下方未列出的插件
+            add-ons-view: null
+            description-text-area: null
+        def `start`:
+            Retrieving package list: 正在获取插件列表
+        def `__on_query_done`:
+            def `network_warning`:
+                Error fetching package list: 获取插件列表失败
+                There's an issue with the internet connection.: 网络连接存在问题。
+                Error: 错误
+                Please check you are connected to the internet.\n\n: 请检查网络连接。\n\n
+                'If you are behind a proxy, please set it in Preferences ': 如果你处于代理网络环境，请在“设置”中配置
+                - Network.: - 网络。
+        def `itemState`:
+            Action: null
+        def `setItemState`:
+            Action: null
+        def `runQueryAndAddResults`:
+            Future[List[_QueryResult]]: null
+            Running query: 正在查询
+        def `__run_add_package_dialog`:
+            Add add-on by name: 按名称添加插件
+            Package name: 插件包名
+            'Enter a package name as displayed on ': 请输入在
+            PyPI (capitalization is not important): PyPI 上显示的包名（不区分大小写）
+            Name:: 名称：
+            Add: 添加
+        def `__show_error_for_query`:
+            Error: null
+        def `__on_add_query_finish`:
+            Query error:: 查询错误：
+            Failed to query package index: 查询包索引失败
+            The following packages were not found:<ul>: 未找到以下包：<ul>
+            <li>{}<li/>: null
+            <ul/>: null
+        def `progressDialog`:
+            Retrieving package list: 正在获取插件列表
+            Progress: 进度
+        .zip: null
+        .whl: null
+        .tar.gz: null
+        def `dropEvent`:
+            Name: 名称
+            Version: 版本
+            Summary: 摘要
+            Description: 描述
+            Description-Content-Type: null
+            Requires-Dist: null
+        def `__accepted`:
+            Warning: 警告
+            This action will upgrade some core packages:\n: 此操作将升级一些核心包：\n
+            \n: null
+            Do you want to continue?: 是否继续？
+            ::InstallerThread: null
+            Installing: 正在安装
+        def `__on_installer_error`:
+            An error occurred while running a subprocess: 运行子进程时发生错误
+            Error: 错误
+            {} exited with non zero status.: {} 以非零状态退出。
+        def `__on_installer_finished`:
+            Orange: null
+            def `message_restart`:
+                Information: 信息
+                {} needs to be restarted for the changes to take effect.: 需要重启 {} 以应用更改。
+                Press OK to restart {} now.: 点击“确定”立即重启 {}。
+                Close later: 稍后关闭
+            def `restart`:
+                Restart Cancelled: 已取消重启
+                Changes will be applied on {}'s next restart: 更改将在 {} 下次启动时生效
+    def `main`:
+        --config: null
+        CLASSNAME: null
+        orangecanvas.config.default: null
+        The configuration namespace to use: null
+    __main__: null
+application/application.py:
+    def `fix_qt_plugins_path`:
+        :qt/etc/qt.conf: null
+        Paths/Prefix: null
+        pyqt5: null
+        pyqt6: null
+        pyside2: null
+        pyside6: null
+    setHighDpiScaleFactorRoundingPolicy: null
+    Round: null
+    Ceil: null
+    Floor: null
+    RoundPreferFloor: null
+    PassThrough: null
+    Unset: null
+    class `CanvasApplication`:
+        def `__init__`:
+            AA_EnableHighDpiScaling: null
+            AA_UseHighDpiPixmaps: null
+            setHighDpiScaleFactorRoundingPolicy: null
+            -style: null
+            styleHints: null
+            setShowShortcutsInContextMenus: null
+            win32: null
+            QMessageBox: null
+        def `argumentParser`:
+            -style: null
+            -colortheme: null
+            -enable-high-dpi-scaling: null
+            setHighDpiScaleFactorRoundingPolicy: null
+            QT_SCALE_FACTOR_ROUNDING_POLICY: null
+            -scale-factor-rounding-policy: null
+            -use-high-dpi-pixmaps: null
+        def `parseArguments`:
+            :: null
+        def `configureStyle`:
+            application-style: null
+            style-name: null
+            palette: null
+    def `set_restart_command`:
+        Disabling application restart: null
+        'Enabling application restart with: %r': null
+application/canvasmain.py:
+    class `CanvasMainWindow`:
+        def `__init__`:
+            untitled: 未命名
+            mainwindow/recent-items: null
+            title: null
+            path: null
+        def `setup_ui`:
+            __dummy_top_toolbar: null
+            __dummy_bottom_toolbar: null
+            main-area-dock: null
+            canvas-tool-dock: null
+            canvas-toolbox: null
+            'h3, a {color: orange;}': null
+            Select a widget to show its description.: 选择一个组件以查看其说明。
+            <br/><br/>: null
+            "See <a href='action:examples-action'>workflow examples</a>, ": 参见 <a href='action:examples-action'>工作流示例</a>、
+            "<a href='action:screencasts-action'>YouTube tutorials</a>, ": <a href='action:screencasts-action'>视频教程</a>，
+            or open the <a href='action:welcome-action'>welcome screen</a>.: 或打开<a href='action:welcome-action'>欢迎页</a>。
+            Show Help: 显示帮助
+            Info.svg: null
+            canvas-quick-dock: null
+            Grid.svg: null
+            Text Size.svg: null
+            Arrow.svg: null
+            Pause.svg: null
+            Document Info.svg: null
+            Log: 日志
+            output-dock: null
+            Help: 帮助
+            help-dock: null
+            help: null
+            help-view-cache: null
+        def `setup_actions`:
+            New: 新建
+            action-new: null
+            Open a new workflow.: 新建工作流。
+            New.svg: null
+            Open: 打开
+            action-open: null
+            Open a workflow.: 打开工作流。
+            Open.svg: null
+            Open and Freeze: 打开并冻结
+            action-open-and-freeze: null
+            'Open a new workflow and freeze signal ': 打开工作流并冻结信号
+            propagation.: 传播。
+            Ctrl+Alt+O: null
+            Close Window: 关闭窗口
+            action-close-window: null
+            Close the window: 关闭窗口
+            Save: 保存
+            action-save: null
+            Save current workflow.: 保存当前工作流。
+            Save As ...: 另存为...
+            action-save-as: null
+            Save current workflow as.: 将当前工作流另存为。
+            Save Workflow Image as SVG ...: 将工作流图像保存为 SVG...
+            action-save-to-svg.: null
+            Save workflow image as SVG.: 将工作流图像保存为 SVG。
+            Quit: 退出
+            quit-action: null
+            Welcome: 欢迎
+            welcome-action: null
+            Show welcome screen.: 显示欢迎页。
+            Get Started: 快速开始
+            get-started-action: null
+            View a 'Get Started' introduction.: 查看“快速开始”指南。
+            Documentation.svg: null
+            Quick Start: 快速开始
+            Video Tutorials: 视频教程
+            screencasts-action: null
+            View video tutorials: 查看视频教程
+            YouTube.svg: null
+            Screencasts: 视频教程
+            Documentation: 文档
+            documentation-action: null
+            View reference documentation.: 查看参考文档。
+            Example Workflows: 示例工作流
+            examples-action: null
+            Browse example workflows.: 浏览示例工作流。
+            Examples.svg: null
+            Frequent Questions...: 常见问题...
+            frequent-questions: 常见问题
+            FAQ: 常见问题
+            Submit Feedback...: 提交反馈...
+            submit-feedback-action: null
+            Feedback: 反馈
+            Submit a Bug Report...: 提交问题报告...
+            submit-bug-report-action: null
+            Bug Report: 问题报告
+            Donate...: 捐赠...
+            donate-action: null
+            Donate: 捐赠
+            About: 关于
+            about-action: null
+            Show about dialog.: 显示“关于”对话框。
+            recent-action-group: null
+            Browse Recent: 浏览最近文件
+            recent-action: null
+            Browse and open a recent workflow.: 浏览并打开最近的工作流。
+            Ctrl+Shift+R: null
+            Recent.svg: null
+            Reload Last Workflow: 重新加载上次工作流
+            reload-last-action: null
+            Reload last open workflow.: 重新加载上次打开的工作流。
+            Ctrl+R: null
+            Clear Menu: 清空菜单
+            clear-recent-menu-action: null
+            Clear recent menu.: 清空最近菜单。
+            Workflow Info: 工作流信息
+            show-properties-action: null
+            Show workflow properties.: 显示工作流属性。
+            Ctrl+I: null
+            Document Info.svg: null
+            Settings: 设置
+            canvas-settings-action: null
+            Set application settings.: 设置应用参数。
+            &Add-ons...: 插件(&A)...
+            canvas-addons-action: null
+            Manage add-ons.: 管理插件。
+            &Log: 日志(&L)
+            Show application standard output.: 显示应用程序标准输出。
+            Minimize: 最小化
+            Ctrl+M: null
+            darwin: null
+            Zoom: 缩放
+            application-zoom: null
+            Freeze: 冻结
+            Shift+F: null
+            signal-freeze-action: null
+            Freeze signal propagation (Shift+F): 冻结信号传播（Shift+F）
+            Pause.svg: null
+            Expand Tool Dock: 展开工具停靠区
+            toggle-tool-dock-expand: null
+            Ctrl+Shift+D: null
+            Show Workflow Margins: 显示工作流边距
+            Show margins around the workflow view.: 显示工作流视图周围的边距。
+            Display Widgets on Top: 组件置顶显示
+            Widgets are always displayed above other windows.: 组件始终显示在其他窗口上方。
+        def `setup_menu`:
+            darwin: null
+            &File: 文件(&F)
+            file-menu: null
+            Open Recent: 打开最近
+            recent-menu: null
+            open-actions-separator: null
+            close-window-actions-separator: null
+            save-actions-separator: null
+            {} ('{}'): null
+            &View: 视图(&V)
+            view-menu: null
+            window-groups-action: null
+            workflow-window-groups-actions-separator: null
+            view-visible-actions-separator: null
+            view-zoom-actions-separator: null
+            &Options: 选项(&O)
+            options-menu: null
+            Window: 窗口
+            window-menu: null
+            bring-widgets-to-front-action: null
+            &Help: 帮助(&H)
+            help-menu: null
+        def `restore`:
+            mainwindow: null
+            canvasdock/expanded: null
+            toolbox-dock-floatable: null
+            toolbox-dock-exclusive: null
+            scheme-margins-enabled: null
+            output-dock/is-visible: null
+            quick-help/visible: null
+            widgets-float-on-top: null
+        def `__update_window_title`:
+            Untitled [*]: 未命名 [*]
+        def `setWindowFilePath`:
+            def `icon_for_path`:
+                QIcon: null
+            darwin: null
+            ' ': null
+        def `set_document_title`:
+            untitled: null
+            [*]: null
+        def `set_widget_registry`:
+            mainwindow/widgettoolbox/state: null
+        def `on_quick_category_action`:
+            mainwindow/toolbox-dock-use-popover-menu: null
+        def `new_workflow_window`:
+            schemeinfo/show-at-new-scheme: null
+        def `open_scheme_file`:
+            freeze: null
+        def `_open_workflow_dialog`:
+            mainwindow: null
+            last-scheme-dir: null
+            Open Orange Workflow File: 打开 Orange 工作流文件
+            Orange Workflow (*.ows): null
+            def `record_last_dir`:
+                last-scheme-dir: null
+        def `load_scheme`:
+            rb: null
+            Error: null
+            Unsupported format version: null
+            'The file was saved in a format not supported by this ': null
+            application.: null
+            "Could not open: '{}'": null
+            'Error was: {}': null
+            widget_manager: null
+        def `new_scheme_from`:
+            rb: null
+            Error: null
+            "Could not open: '{}'": null
+            'Error was: {}': null
+        def `new_scheme_from_contents_and_path`:
+            basedir: null
+            Could not load an Orange Workflow file.: null
+            Error: null
+            'An unexpected error occurred ': null
+            while loading '%s'.: null
+            Could not load the full workflow.: null
+            Workflow Partially Loaded: null
+            'Some of the nodes/links could not be reconstructed ': null
+            and were omitted from the workflow.: null
+        def `check_requires`:
+            <h4>Required packages:</h4><ul>: null
+            <li>{}</li>: null
+            </ul>: null
+            install-requirements-message-box: null
+            Install Additional Packages: null
+            'Workflow you are trying to load contains widgets ': null
+            from missing add-ons.: null
+            <br/>: null
+            Would you like to install them now?: null
+            'After installation you will have to restart the ': null
+            application and reopen the workflow.: null
+            Install add-ons: 安装插件
+            Ignore missing widgets: 忽略缺失组件
+            Load partial workflow by omitting missing nodes and links.: null
+            Please Restart: null
+            Please restart and reopen the file.: null
+        def `install_requirements`:
+            Install required packages: null
+        def `reload_last`:
+            mainwindow/recent-items: null
+            path: null
+        def `set_scheme`:
+            signal_manager: null
+            widget_manager: null
+        def `__title_for_scheme`:
+            untitled: null
+        def `ask_save_changes`:
+            Do you want to save changes made to %s?: null
+            Do you want to save this workflow?: null
+            Save Changes?: 保存更改？
+            Your changes will be lost if you do not save them.: null
+        def `save_scheme_as`:
+            last-scheme-dir: null
+            .ows: null
+            Save Orange Workflow File: 保存 Orange 工作流文件
+            save-as-ows-filedialog: null
+            Orange Workflow (*.ows): null
+        def `save_scheme_to`:
+            untitled: null
+            basedir: null
+            Error saving %r to %r: null
+            'An error occurred while trying to save workflow ': null
+            '"%s" to "%s"': null
+            Error saving %s: null
+            wb: null
+            %s saving '%s': null
+            'Workflow "%s" could not be saved. The path does ': null
+            not exist: null
+            Choose another location.: null
+            'Workflow "%s" could not be saved. You do not ': null
+            have write permissions.: null
+            'Change the file system permissions or choose ': null
+            another location.: null
+            Workflow "%s" could not be saved.: null
+        def `save_swp_to`:
+            wb: null
+            Could not write swp file %r.: null
+        def `clear_swp`:
+            def `remove`:
+                'Could not delete swp file: %s': null
+        def `ask_load_swp_if_exists`:
+            startup/load-crashed-workflows: null
+        def `ask_load_swp`:
+            Restore unsaved changes from crash?: 恢复崩溃后未保存的更改？
+            Orange: null
+            Restore Changes?: null
+            {} seems to have crashed at some point.\n: null
+            Changes will be discarded if not restored now.: null
+        def `load_swp_from`:
+            rb: null
+            'Could not load swp file: %r': null
+            Could not load restore data.: null
+            Error: null
+        def `_settings`:
+            mainwindow: null
+        def `save_as_svg`:
+            save-as-svg-filedialog: null
+            path: null
+            .svg: null
+            untitled.svg: null
+            Scalable Vector Graphics (*.svg): null
+            def `save`:
+                path: null
+        def `__save_as_svg`:
+            wt: null
+            utf-8: null
+        def `_handle_os_write_error`:
+            Write error: null
+            '"%(path)s" could not be saved. You do not ': null
+            have write permissions (%(strerror)s).: null
+            path: null
+            strerror: null
+            'Change the file system permissions or choose ': null
+            another location.: null
+            '"%(path)s" could not be saved.': null
+        def `recent_scheme`:
+            mainwindow/recent-items: null
+            title: null
+            path: null
+            Recent Workflows: 最近工作流
+            '<h3 style="font-size: 26px">\n': null
+            {0}\n: null
+            </h3>: null
+        def `examples_dialog`:
+            Example Workflows: 示例工作流
+            '<h3 style="font-size: 26px">\n': null
+            {0}\n: null
+            </h3>: null
+        def `welcome_dialog`:
+            Welcome to {}: null
+            Welcome: null
+            Feedback: null
+            Donate: 捐赠
+            New: 新建
+            Open a new workflow.: 新建工作流。
+            New.svg: null
+            Open: 打开
+            welcome-action-open: null
+            Open a workflow.: 打开工作流。
+            Open.svg: null
+            Recent: 最近
+            welcome-recent-action: null
+            Browse and open a recent workflow.: 浏览并打开最近的工作流。
+            Ctrl+Shift+R: null
+            Recent.svg: null
+            Examples: 示例
+            welcome-examples-action: null
+            Browse example workflows.: 浏览示例工作流。
+            Examples.svg: null
+            light-grass: null
+            light-orange: null
+            startup/show-welcome-screen: null
+        def `scheme_properties_dialog`:
+            schemeinfo/show-at-new-scheme: null
+            Workflow Info: 工作流信息
+        def `show_scheme_properties`:
+            Change Info: null
+        def `set_signal_freeze`:
+            signal_manager: null
+            widget_manager: null
+        def `open_canvas_settings`:
+            Preferences: 首选项
+        def `open_addons`:
+            Orange: null
+            'Add-ons: insufficient permissions': null
+            'Insufficient permissions to install add-ons. Try starting {name} ': null
+            as a system administrator or install {name} in user folders.: null
+            Installer: null
+        def `add_recent_scheme`:
+            {} ('{}'): null
+            mainwindow: null
+            recent-items: null
+            title: null
+            path: null
+        def `clear_recent_schemes`:
+            mainwindow/recent-items: null
+        def `closeEvent`:
+            mainwindow: null
+            geometry: null
+            state: null
+            canvasdock/expanded: null
+            scheme-margins-enabled: null
+            widgettoolbox/state: null
+            quick-help/visible: null
+            widgets-float-on-top: null
+        def `showEvent`:
+            mainwindow: null
+            geometry: null
+            state: null
+        def `__handle_help_query_response`:
+            There is no documentation for this widget.: null
+            No help found: null
+            no-help-found-message-box: null
+        def `whatsThisClickedEvent`:
+            help: null
+            search: null
+            def `run`:
+                No help topic found for %r: null
+            action: null
+            No target action found for %r: null
+        def `show_help`:
+            'Setting help to url: %r': null
+            help/open-in-external-browser: null
+        def `__update_from_settings`:
+            mainwindow: null
+            toolbox-dock-floatable: null
+            toolbox-dock-exclusive: null
+            num-recent-schemes: null
+            widgets-float-on-top: null
+            quickmenu: null
+            trigger-on-double-click: null
+            trigger-on-right-click: null
+            trigger-on-space-key: null
+            trigger-on-any-key: null
+            schemeedit: null
+            show-channel-names: null
+            open-anchors-on-hover: null
+            enable-node-animations: null
+            network: null
+            use-certs: null
+    def `index`:
+        key: null
+        predicate: null
+        %r not in sequence: null
+    class `UrlDropEventFilter`:
+        def `acceptsDrop`:
+            file: null
+            .ows: null
+    K: null
+    V: null
+    def `render_error_details`:
+        Missing node definitions:: null
+        '  \N{BULLET} ': null
+        Incompatible connection types:: null
+        Unqualified errors:: null
+        \n: null
+application/canvastooldock.py:
+    class `SplitterResizer`:
+        def `__init__`:
+            size_: null
+            toggle-expanded: null
+        def `setSplitterAndWidget`:
+            Widget must be in a splitter.: null
+        def `toogleExpandedAction`:
+            "'toogleExpandedAction is deprecated, use 'toggleExpandedAction' ": null
+            instead.: null
+    class `CanvasToolDock`:
+        def `__setupUi`:
+            quick-help: null
+        def `toogleQuickHelpAction`:
+            "'toogleQuickHelpAction' is deprecated, use ": null
+            "'toggleQuickHelpAction' instead.": null
+    class `QuickCategoryToolbar`:
+        def `setColumnCount`:
+            Cannot set the column count on a Toolbar: null
+        def `createButtonForAction`:
+            quick-category-toolbutton: null
+            QToolButton {\n: null
+            '    background: %s;\n': null
+            '    border: none;\n': null
+            '    border-bottom: 1px solid palette(mid);\n': null
+            }: null
+    class `CategoryPopupMenu`:
+        def `__init__`:
+            darwin: null
+        def `setCategoryItem`:
+            setCategoryItem is deprecated. Use the more general 'setModel': null
+            and setRootIndex: null
+        def `exec_`:
+            exec_ is deprecated, use exec: null
+        def `__onDragStarted`:
+            application/vnd.orange-canvas.registry.qualified-name: null
+            utf-8: null
+application/examples.py:
+    def `list_workflows`:
+        def `is_ows`:
+            .ows: null
+    def `workflows`:
+        tutorials_entry_points: null
+        Could not load examples from %r: null
+        'A callable entry point (%r) raised an ': null
+        unexpected error.: null
+    class `ExampleWorkflow`:
+        def `abspath`:
+            cannot resolve resource to an absolute name: null
+        def `stream`:
+            rb: null
+application/outputview.py:
+    class `TerminalView`:
+        def `sizeHint`:
+            X: null
+    class `TerminalTextDocument`:
+        def `__init__`:
+            defaultFont: null
+        TextStream: null
+        Formatter: null
+        def `connectedStreams`:
+            TextStream: null
+        def `connectStream`:
+            TextStream: null
+            "'charformat' and kwargs cannot be used together": null
+        def `disconnectStream`:
+            TextStream: null
+        def `clone`:
+            TerminalTextDocument: null
+    class `OutputView`:
+        def `formated`:
+            "'Use 'formatted'": null
+    class `Formatter`:
+        def `formated`:
+            Use 'formatted': null
+    class `formater`:
+        def `__init__`:
+            'Deprecated: Renamed to Formatter.': null
+    class `TextStream`:
+        def `write`:
+            write operation on a closed stream.: null
+        def `writelines`:
+            write operation on a closed stream.: null
+        def `flush`:
+            write operation on a closed stream.: null
+        def `detach`:
+            detach: null
+        def `read`:
+            read: null
+        def `readline`:
+            readline: null
+        def `readlines`:
+            readlines: null
+        def `fileno`:
+            fileno: null
+        def `seek`:
+            seek: null
+        def `tell`:
+            tell: null
+    class `ExceptHook`:
+        def `__call__`:
+            ' Exception': null
+            ' (in non-GUI thread)': null
+            {:-^79}\n: null
+            ' ': null
+            -: null
+            \n: null
+application/schemeinfo.py:
+    class `SchemeInfoEdit`:
+        def `__setupUi`:
+            untitled: null
+            Title: 标题
+            Description: 描述
+        def `setScheme`:
+            untitled: null
+        def `commit`:
+            untitled: null
+    class `SchemeInfoDialog`:
+        def `__setupUi`:
+            Workflow Info: 工作流信息
+            <h3>{0}</h3>: <h3>{0}</h3>
+            heading: null
+            auto-show-container: null
+            Show when I make a New Workflow.: 新建工作流时显示
+            auto-show-check: null
+            'You can also edit Workflow Info later ': 你也可以稍后通过
+            (File -> Workflow Info).: （文件 -> 工作流信息）进行编辑。
+            auto-show-info: null
+application/settings.py:
+    class `UserSettingsModel`:
+        def `__init__`:
+            Name: 名称
+            Status: 状态
+            Type: 类型
+            Value: 值
+        def `data`:
+            Default: 默认
+            User: 用户
+        def `setData`:
+            Failed to set value (%r) for key %r: 无法为键 %r 设置值（%r）
+    _State: null
+    visible: null
+    position: null
+    class `UserSettingsDialog`:
+        def `__init__`:
+            darwin: null
+        def `__setupUi`:
+            General: 常规
+            General Options: 常规选项
+            Changes will take effect on next application startup.: 更改将在下次启动应用后生效。
+            combo-language: null
+            Select the application language.: 选择应用语言。
+            currentText: null
+            application/language: null
+            Language: 语言
+            nodes: null
+            Enable node animations: 启用节点动画
+            enable-node-animations: null
+            'Enable shadow and ping animations for nodes ': 为节点启用阴影和高亮动画
+            in the workflow.: （在工作流中）。
+            Open anchors on hover: 悬停时展开锚点
+            open-anchors-on-hover: null
+            'Open/expand node anchors on mouse hover (if unchecked the ': 鼠标悬停时展开节点锚点（若关闭该项，
+            anchors are expanded when Shift key is pressed).: 则按 Shift 键时才展开锚点）。
+            checked: null
+            schemeedit/enable-node-animations: null
+            schemeedit/open-anchors-on-hover: null
+            Nodes: 节点
+            links: null
+            Show channel names between widgets: 在组件之间显示通道名称
+            show-channel-names: null
+            'Show source and sink channel names ': 在连线上显示源端和目标端通道名称
+            over the links.: 。
+            schemeedit/show-channel-names: null
+            Links: 连线
+            quickmenu-options: null
+            Open on double click: 双击打开
+            'Open quick menu on a double click ': 在画布空白处双击时打开快捷菜单
+            on an empty spot in the canvas: 。
+            Open on right click: 右键打开
+            'Open quick menu on a right click ': 在画布空白处右键时打开快捷菜单
+            Open on space key press: 按空格键打开
+            'Open quick menu on Space key press ': 鼠标悬停在画布上时按空格键打开快捷菜单
+            while the mouse is hovering over the canvas.: 。
+            Open on any key press: 按任意键打开
+            'Open quick menu on any key press ': 鼠标悬停在画布上时按任意键打开快捷菜单
+            Show categories: 显示分类
+            'In addition to searching, allow filtering ': 除了搜索外，还允许按分类筛选
+            by categories.: 。
+            quickmenu/trigger-on-double-click: null
+            quickmenu/trigger-on-right-click: null
+            quickmenu/trigger-on-space-key: null
+            quickmenu/trigger-on-any-key: null
+            quickmenu/show-categories: null
+            Quick menu: 快捷菜单
+            startup-group: null
+            Show splash screen: 显示启动画面
+            show-splash-screen: null
+            Show welcome screen: 显示欢迎界面
+            show-welcome-screen: null
+            Load crashed scratch workflows: 加载崩溃恢复的临时工作流
+            load-crashed-workflows: null
+            startup/show-splash-screen: null
+            startup/show-welcome-screen: null
+            startup/load-crashed-workflows: null
+            On startup: 启动时
+            toolbox-group: null
+            Only one tab can be open at a time: 一次仅允许一个标签页展开
+            mainwindow/toolbox-dock-exclusive: null
+            Tool box: 工具箱
+            &Style: 样式(&S)
+            Application style: 应用样式
+            selectedStyle_: null
+            application-style/style-name: null
+            selectedPalette_: null
+            application-style/palette: null
+            Output: 输出
+            Output Redirection: 输出重定向
+            Critical: 严重
+            Error: 错误
+            Warn: 警告
+            Info: 信息
+            Debug: 调试
+            currentIndex: null
+            logging/level: null
+            Logging: 日志
+            Open in external browser: 在外部浏览器中打开
+            open-in-external-browser: null
+            help/open-in-external-browser: null
+            Help window: 帮助窗口
+            Categories: 分类
+            Add-ons: 插件
+            Settings related to add-on installation: 与插件安装相关的设置
+            conda-group: null
+            Install add-ons with conda: 使用 conda 安装插件
+            allow-conda: null
+            add-ons/allow-conda: null
+            Conda: null
+            Pip: null
+            Pip install arguments:: Pip 安装参数：
+            text: null
+            add-ons/pip-install-arguments: null
+            Network: 网络
+            Settings related to networking: 与网络相关的设置
+            network/http-proxy: null
+            HTTP proxy:: HTTP 代理：
+            network/https-proxy: null
+            HTTPS proxy:: HTTPS 代理：
+            network/use-certs: null
+            Use system certificates:: 使用系统证书：
+        def `reset`:
+            Error reseting %r: null
+        def `exec_`:
+            exec_ is deprecated, use exec: null
+    class `StyleConfigWidget`:
+        windowsvista: null
+        Windows (default): null
+        macintosh: null
+        macOS (default): null
+        windows: null
+        MS Windows 9x: null
+        def `__init__`:
+            windows: null
+            fusion: null
+            Default: null
+            style-cb: null
+            palette-cb: null
+            Breeze Light: null
+            breeze-light: null
+            Breeze Dark: null
+            breeze-dark: null
+            Zion Reversed: null
+            zion-reversed: null
+            Dark: null
+            dark: null
+            Style: null
+            Color theme: null
+            <small>Changes will be applied on next application startup.</small>: null
+        def `_update_colors_enabled_state`:
+            fusion: null
+            windows: null
+    def `category_state`:
+        mainwindow/categories/{0}/visible: null
+        mainwindow/categories/{0}/position: null
+    def `save_category_state`:
+        mainwindow/categories/{0}/visible: null
+        mainwindow/categories/{0}/position: null
+application/welcomedialog.py:
+    class `DecoratedIconEngine`:
+        def `paint`:
+            QPainter: null
+        def `clone`:
+            QIconEngine: null
+    '
+WelcomeActionButton {
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 13px;
+    icon-size: 75px;
+}
+WelcomeActionButton:pressed {
+    background-color: palette(highlight);
+    color: palette(highlighted-text);
+}
+WelcomeActionButton:focus {
+    border: 1px solid palette(highlight);
+}
+': null
+    class `WelcomeActionButton`:
+        def `__init__`:
+            QAbstractButton: null
+    class `WelcomeDialog`:
+        def `__init__`:
+            showAtStartup: null
+            feedbackUrl: null
+            donateUrl: null
+        def `setupUi`:
+            bottom-bar: null
+            Show at startup: 启动时显示
+        def `setFeedbackUrl`:
+            Help us improve!: 帮助我们改进！
+            <a href="{url}">{text}</a>: null
+        def `setDonateUrl`:
+            Donate: 捐赠
+            <a href="{url}">{text}</a>: null
+        def `addRow`:
+            light-orange: null
+        def `insertRow`:
+            light-orange: null
+            icon-row: null
+        def `insertAction`:
+            light-orange: null
+        def `createButton`:
+            light-orange: null
+application/widgettoolbox.py:
+    class `WidgetToolGrid`:
+        def `__startDrag`:
+            application/vnd.orange-canvas.registry.qualified-name: null
+            utf-8: null
+    class `WidgetToolBox`:
+        def `__init__`:
+            Search.svg: null
+            Search: 搜索
+            filter-edit-line: null
+            Filter...: null
+            Filter/search the list of available widgets.: null
+            Open all: 全部展开
+            Close all: 全部收起
+        def `__insertItem`:
+            tab-title: null
+            widgets-toolbox-grid: null
+        def `__openAllTabsForFilter`:
+            !__exclusive: null
+        def `__restoreAllTabsForFilter`:
+            !__exclusive: null
+application/utils/addons.py:
+    https://pypi.org/pypi/{name}/json: null
+    A: null
+    B: null
+    def `prettify_name`:
+        -: null
+        orange: null
+        orange3: null
+        ' ': null
+        (?<!^)((?<![\s\d])[A-Z][a-z]|(?<=[a-z])[A-Z]): null
+        ' \1': null
+    class `Installable`:
+        Installable: null
+        name: null
+        version: null
+        summary: null
+        description: null
+        package_url: null
+        release_urls: null
+        ReleaseUrl: null
+        requirements: null
+        description_content_type: null
+        force: null
+    class `ReleaseUrl`:
+        ReleaseUrl: null
+        filename: null
+        url: null
+        size: null
+        python_version: null
+        package_type: null
+    class `Available`:
+        Available: null
+        installable: null
+    class `Installed`:
+        Installed: null
+        installable: null
+        local: null
+        Distribution: null
+        required: null
+        constraint: null
+    def `get_meta_from_archive`:
+        def `is_metadata`:
+            PKG-INFO: null
+            METADATA: null
+        .zip: null
+        .whl: null
+        utf-8: null
+        .tar.gz: null
+        .tgz: null
+    def `installable_from_json_response`:
+        info: null
+        name: null
+        version: null
+        0: null
+        summary: null
+        description: null
+        description_content_type: null
+        package_url: null
+        releases: null
+        filename: null
+        url: null
+        size: null
+        python_version: null
+        packagetype: null
+        requires_dist: null
+    def `_session`:
+        networkcache: null
+        requests.sqlite: null
+        sqlite: null
+        "Cache file creation/opening failed with: '{str(ex)}'. ": null
+        Using requests.Session instead of cached session.: null
+    def `list_available_versions`:
+        def `getname`:
+            info: null
+            name: null
+    def `have_install_permissions`:
+        purelib: null
+        test_write_: null
+        w: null
+    class `Command`:
+        Install: null
+        Upgrade: null
+        Uninstall: null
+    class `CommandFailed`:
+        def `__init__`:
+            ' ': null
+    class `Installer`:
+        def `_next`:
+            Installing {}: null
+            Upgrading {}: null
+            Uninstalling {}: null
+            'Command failed: python {}': null
+    class `PipInstaller`:
+        def `__init__`:
+            add-ons/pip-install-arguments: null
+        def `install`:
+            python: null
+            -m: null
+            pip: null
+            install: null
+            --upgrade: null
+            --upgrade-strategy=only-if-needed: null
+            http://: null
+            https://: null
+            =={}: null
+        def `upgrade`:
+            python: null
+            -m: null
+            pip: null
+            install: null
+            --upgrade: null
+            --upgrade-strategy=only-if-needed: null
+            http://: null
+            https://: null
+            =={}: null
+        def `uninstall`:
+            python: null
+            -m: null
+            pip: null
+            uninstall: null
+            --yes: null
+    class `CondaInstaller`:
+        def `__init__`:
+            add-ons/allow-conda: null
+        def `_find_conda`:
+            conda: null
+            Scripts: null
+            conda.bat: null
+            CONDA_PREFIX: null
+            CONDA_DEFAULT_ENV: null
+        def `install`:
+            ={}: null
+            install: null
+            --yes: null
+            --quiet: null
+        def `upgrade`:
+            ={}: null
+            install: null
+            --yes: null
+            --quiet: null
+        def `uninstall`:
+            uninstall: null
+            --yes: null
+    def `run_command`:
+        Running %s: null
+        ' ': null
+        env: null
+        PYTHONIOENCODING: null
+        utf-8: null
+        PYTHONUTF8: null
+        1: null
+        encoding: null
+        errors: null
+        backslashreplace: null
+        universal_newlines: null
+        python: null
+    def `run_process`:
+        subprocess.Popen: null
+        file: null
+canvas/__init__.py:
+    scene: null
+    layout: null
+    view: null
+    items: null
+canvas/layout.py:
+    class `AnchorLayout`:
+        def `invalidateAnchorItem`:
+            sinkItem: null
+            inputAnchorItem: null
+            sourceItem: null
+            outputAnchorItem: null
+canvas/scene.py:
+    T: null
+    CanvasScene: null
+    grab_svg: null
+    class `CanvasScene`:
+        def `add_node_item`:
+            %r is already in the scene.: null
+        def `new_link_item`:
+            <b>{0}</b>&nbsp; \u2192 &nbsp;<b>{1}</b>: null
+        def `commit_scheme_node`:
+            Scheme not editable.: null
+            No 'NodeItem' for node.: null
+            An error occurred while committing node '%s': null
+            Commited node '%s' from '%s' to '%s': null
+        def `commit_scheme_link`:
+            Scheme not editable: null
+            No 'LinkItem' for link.: null
+            Commited link '%s' from '%s' to '%s': null
+        def `neighbor_nodes`:
+            sourceItem: null
+            sinkItem: null
+        def `set_user_interaction_handler`:
+            Setting interaction '%s' to '%s': null
+        def `__str__`:
+            %s(objectName=%r, ...): null
+    def `font_from_dict`:
+        family: null
+        size: null
+    def `grab_svg`:
+        utf-8: null
+canvas/view.py:
+    class `CanvasView`:
+        def `__init__`:
+            Zoom in: null
+            action-zoom-in: null
+            Cmd: null
+            darwin: null
+            Ctrl: null
+            +=: null
+            Zoom out: null
+            action-zoom-out: null
+            Reset Zoom: null
+            action-zoom-reset: null
+            Ctrl+0: null
+        def `__should_scroll_horizontally`:
+            darwin: null
+        def `__startAutoScroll`:
+            Auto scroll timer started: null
+        def `__stopAutoScroll`:
+            Auto scroll timer stopped: null
+        def `__autoScrollAdvance`:
+            Auto scroll advance: null
+        def `setBackgroundIcon`:
+            A QIcon expected.: null
+canvas/items/annotationitem.py:
+    class `GraphicsTextEdit`:
+        def `__init__`:
+            editTriggers: null
+        Placeholder text: null
+    class `TextAnnotation`:
+        def `__init__`:
+            text/plain: null
+            Enter text here: null
+        def `setContent`:
+            text/plain: null
+        def `setPlainText`:
+            text/plain: null
+        def `setHtml`:
+            text/html: null
+        def `endEdit`:
+            __updateRenderedContent: null
+        def `contextMenuEvent`:
+            Render as: null
+            Plain Text: null
+            Render contents as plain text: null
+            text/plain: null
+            HTML: null
+            Render contents as HTML: null
+            text/html: null
+            RST: null
+            'Render contents as RST ': null
+            (reStructuredText): null
+            text/rst: null
+            Markdown: null
+            Render contents as Markdown: null
+            text/markdown: null
+canvas/items/graphicspathobject.py:
+    class `GraphicsPathObject`:
+        QPointF: null
+canvas/items/graphicstextitem.py:
+    def `createStandardContextMenu`:
+        def `createMimeDataFromSelection`:
+            utf-8: null
+        def `canPaste`:
+            text/plain: null
+            text/html: null
+        &Undo: null
+        edit-undo: null
+        &Redo: null
+        edit-redo: null
+        Cu&t: null
+        edit-cut: null
+        &Copy: null
+        edit-copy: null
+        Copy &Link Location: null
+        link-copy: null
+        &Paste: null
+        edit-paste: null
+        Delete: null
+        edit-delete: null
+        Select All: null
+        select-all: null
+    class `GraphicsTextEdit`:
+        def `__init__`:
+            editTriggers: null
+            alignment: null
+            returnKeyEndsEditing: null
+            darwin: null
+        def `setTextInteractionFlags`:
+            Qt.TextInteractionFlag: null
+            Qt.TextInteractionFlags: null
+    def `qgraphicsitem_accent_color`:
+        QGraphicsItem: null
+        QMacStyle: null
+canvas/items/linkitem.py:
+    class `LinkCurveItem`:
+        def `__init__`:
+            '#9CACB4': null
+            blurRadius: null
+    class `LinkItem`:
+        def `__init__`:
+            opacity: null
+        def `setSourceItem`:
+            Anchor must be belong to the item: null
+        def `setSinkItem`:
+            Anchor must be belong to the item: null
+        def `__updateText`:
+            <nobr>{0}</nobr> \u2192 <nobr>{1}</nobr>: null
+            '<div align="center" style="font-size: small" >{0}</div>': null
+        def `__update_tooltip`:
+            {self.sourceItem.title()} is not providing the proper data type required by {self.sinkItem.title()}: null
+        def `__updatePen`:
+            '#9CACB4': null
+            '#959595': null
+canvas/items/nodeitem.py:
+    def `create_palette`:
+        '#515151': null
+    def `default_palette`:
+        light-yellow: null
+        yellow: null
+    '#9CACB4': null
+    '#609ED7': null
+    class `NodeBodyItem`:
+        def `__init__`:
+            shadow-shape-item: null
+            blurRadius: null
+            scale: null
+    class `LinkAnchorIndicator`:
+        def `__init__`:
+            '#9CACB4': null
+            '#959595': null
+        def `setLinkState`:
+            LinkItem.State: null
+    class `AnchorPoint`:
+        def `__init__`:
+            pos: null
+        def `setLinkState`:
+            LinkItem.State: null
+    class `NodeAnchorItem`:
+        def `__init__`:
+            '#CDD5D9': null
+            '#9CACB4': null
+            '#959595': null
+            shadow-shape-item: null
+            blurRadius: null
+        def `setSignals`:
+            <div align=": null
+            left: null
+            right: null
+            '" style="font-size: small; background-color: palette(base);" >{0}</div>': null
+            opacity: null
+        def `insertAnchor`:
+            %s already added.: null
+    class `GraphicsIconItem`:
+        def `__init__`:
+            opacity: null
+    class `NodeItem`:
+        Node title text.: null
+        Node progress state.: null
+        def `newInputAnchor`:
+            Widget has no inputs.: null
+        def `newOutputAnchor`:
+            Widget has no outputs.: null
+        def `__updateTitleText`:
+            <div align="center">%s: null
+            progress: null
+            {0:.0f}%: null
+            %i%%: null
+            <br/>: null
+            '<span style="font-style: italic">': null
+            </span>: null
+            </div>: null
+        def `__updateMessages`:
+            _error: null
+            _warn: null
+            _info: null
+            severity: null
+            <br/>: null
+    '\
+<html>
+<head>
+<style type="text/css">
+{style}
+</style>
+</head>
+<body>
+{tooltip}
+</body>
+</html>
+': null
+    def `NodeItem_toolTipHelper`:
+        <li>{0}</li>: null
+        <b>{title}</b><hr/>: null
+        Inputs:<ul>{inputs}</ul><hr/>: 输入：<ul>{inputs}</ul><hr/>
+        Outputs:<ul>{outputs}</ul>: 输出：<ul>{outputs}</ul>
+        No inputs<hr/>: 无输入<hr/>
+        No outputs: 无输出
+        'ul { margin-top: 1px; margin-bottom: 1px; }': null
+canvas/items/utils.py:
+    T: null
+    A: null
+    B: null
+    C: null
+    def `linspace`:
+        Count must be non-negative: null
+document/__init__.py:
+    quickmenu: null
+    schemeedit: null
+document/commands.py:
+    class `UndoCommand`:
+        def `__getstate__`:
+            _UndoCommand__initialized: null
+            _UndoCommand__text: null
+            _UndoCommand__children: null
+        def `__setstate__`:
+            _UndoCommand__initialized: null
+            _UndoCommand__text: null
+            _UndoCommand__parent: null
+            _UndoCommand__child_states: null
+    class `AddNodeCommand`:
+        def `__init__`:
+            Add %s: null
+    class `RemoveNodeCommand`:
+        def `__init__`:
+            Remove %s: null
+    class `AddLinkCommand`:
+        def `__init__`:
+            Add link: null
+    class `RemoveLinkCommand`:
+        def `__init__`:
+            Remove link: null
+    class `InsertNodeCommand`:
+        def `__init__`:
+            Insert widget into link: null
+    class `AddAnnotationCommand`:
+        def `__init__`:
+            Add annotation: null
+    class `RemoveAnnotationCommand`:
+        def `__init__`:
+            Remove annotation: null
+    class `MoveNodeCommand`:
+        def `__init__`:
+            Move: null
+    class `ResizeCommand`:
+        def `__init__`:
+            Resize: null
+    class `ArrowChangeCommand`:
+        def `__init__`:
+            Move arrow: null
+    class `AnnotationGeometryChange`:
+        def `__init__`:
+            Change Annotation Geometry: null
+    class `RenameNodeCommand`:
+        def `__init__`:
+            Rename: 重命名
+    class `TextChangeCommand`:
+        def `__init__`:
+            Change text: null
+    class `SetAttrCommand`:
+        def `__init__`:
+            Set %r: null
+    class `SetWindowGroupPresets`:
+        def `__init__`:
+            Scheme: null
+            Scheme.WindowGroup: null
+            text: null
+            Set Window Presets: 设置窗口预设
+document/editlinksdialog.py:
+    class `EditLinksDialog`:
+        def `__setupUi`:
+            Clear All: 全部清除
+    _Link: null
+    output: null
+    input: null
+    lineItem: null
+    class `LinksEditWidget`:
+        def `addLink`:
+            %r is not an output channel of %r: null
+            %r is not an input channel of %r: null
+            Click to remove the link.: 单击可移除此连线。
+        def `removeLink`:
+            No such link {0.name!r} -> {1.name!r}.: null
+        def `__updateState`:
+            <center><b>{0}<b></center>: null
+        def `__updateAnchorState`:
+            Click and drag to connect widgets!: 单击并拖动以连接组件！
+            No compatible input channel.: 没有兼容的输入通道。
+            No compatible output channel.: 没有兼容的输出通道。
+    class `EditLinksNode`:
+        def `setSchemeNode`:
+            <div align="{align}">: null
+            <span class="channelname">{name}</span>: null
+            </div>: null
+            right: null
+            left: null
+            description: null
+document/interactions.py:
+    A: null
+    class `NewLinkAction`:
+        def `mousePressEvent`:
+            <h3>Create new link</h3>: null
+            '<p>Drag a link to an existing node or release on ': null
+            an empty spot to create a new node.</p>: null
+            '<p>Hold Shift when releasing the mouse button to ': null
+            edit connections.</p>: null
+        def `mouseMoveEvent`:
+            %r is no longer the target.: null
+            %r is the new target.: null
+            %r does not have compatible channels: null
+        def `mouseReleaseEvent`:
+            Add link: null
+            Failed to create a new node, ending.: null
+        def `create_new`:
+            item: null
+        def `connect_nodes`:
+            'proposed (weighted) links: %r': null
+            Failed to edit the links: null
+            'Cannot connect: invalid channel types.': null
+            'Cannot connect: connection creates a cycle.': null
+            'Cannot connect: no possible links.': null
+            User canceled a new link action.: null
+            An error occurred during the creation of a new link.: null
+        def `edit_links`:
+            Optional[List[OIPair]]: null
+            Tuple[int, List[Link], List[Link]]: null
+    def `edit_links`:
+        Optional[List[OIPair]]: null
+        Optional[QWidget]: null
+        Tuple[int, List[OIPair], List[OIPair]]: null
+        Constructing a Link Editor dialog.: null
+        Edit Links: 编辑连线
+        Executing a Link Editor Dialog.: null
+    class `NewNodeAction`:
+        def `create_new`:
+            item: null
+    class `EditNodeLinksAction`:
+        def `edit_links`:
+            Constructing a Link Editor dialog.: null
+            Edit Links: 编辑连线
+            Executing a Link Editor Dialog.: null
+    class `NewArrowAnnotation`:
+        def `__init__`:
+            red: null
+        def `start`:
+            <h3>New arrow annotation</h3>: null
+            <p>Click and drag to create a new arrow annotation</p>: null
+    class `NewTextAnnotation`:
+        def `start`:
+            <h3>New text annotation</h3>: null
+            '<p>Click (and drag to resize) on the canvas to create ': null
+            a new text annotation item.</p>: null
+            '<p>Right click on the annotation to change how it is ': null
+            rendered (Markdown, HTML, ...).</p>: null
+        def `createNewAnnotation`:
+            family: null
+            size: null
+    class `ResizeTextAnnotation`:
+        def `commit`:
+            rect: null
+            Edit text geometry: null
+        def `start`:
+            <h3>Edit Text Annotation</h3>: null
+            <p>Drag control points to resize the annotation.</p>: null
+            '<p>Right click on the annotation to change how it is ': null
+            rendered (Markdown, HTML, ...).</p>: null
+        def `cancel`:
+            ResizeTextAnnotation.cancel(%s): null
+    class `ResizeArrowAnnotation`:
+        def `commit`:
+            geometry: null
+            Edit arrow geometry: null
+        def `cancel`:
+            ResizeArrowAnnotation.cancel(%s): null
+    class `DropHandler`:
+        def `accepts`:
+            SchemeEditWidget: null
+            QGraphicsSceneDragDropEvent: null
+        def `doDrop`:
+            SchemeEditWidget: null
+            QGraphicsSceneDragDropEvent: null
+    class `DropHandlerAction`:
+        def `actionFromDropEvent`:
+            SchemeEditWidget: null
+            QGraphicsSceneDragDropEvent: null
+    class `NodeFromMimeDataDropHandler`:
+        def `canDropMimeData`:
+            SchemeEditWidget: null
+            QMimeData: null
+        def `parametersFromMimeData`:
+            SchemeEditWidget: null
+            QMimeData: null
+            Dict[str, Any]: null
+        def `accepts`:
+            SchemeEditWidget: null
+            QGraphicsSceneDragDropEvent: null
+        def `nodeFromMimeData`:
+            SchemeEditWidget: null
+            QMimeData: null
+            Node: null
+        def `doDrop`:
+            SchemeEditWidget: null
+            QGraphicsSceneDragDropEvent: null
+        def `activateNode`:
+            SchemeEditWidget: null
+            Node: null
+            QWidget: null
+        def `actionFromDropEvent`:
+            SchemeEditWidget: null
+            QGraphicsSceneDragDropEvent: null
+            {self.qualifiedName()}: null
+    def `load_entry_point`:
+        EntryPoint: null
+        Could not load %s: null
+        Unexpected Error; %s will be skipped: null
+    class `PluginDropHandler`:
+        orangecanvas.document.interactions.DropHandler: null
+        def `iterEntryPoints`:
+            EntryPoint: null
+        def `entryPoints`:
+            EntryPoint: null
+            DropHandler: null
+            '{ep} yielded {type(value)}, expected a ': null
+            {DropHandler} subtype: null
+            Error in default constructor of %s: null
+        def `accepts`:
+            SchemeEditWidget: null
+            QGraphicsSceneDragDropEvent: null
+        def `doDrop`:
+            SchemeEditWidget: null
+            QGraphicsSceneDragDropEvent: null
+            class `Title`:
+                def `createWidget`:
+                    <b>Select a widget</b>: null
+            {ep_.name} ({ep_.module_name}): null
+    class `DropAction`:
+        def `canHandleDrop`:
+            QGraphicsSceneDragDropEvent: null
+document/quickmenu.py:
+    class `_MenuItemDelegate`:
+        def `paint`:
+            FFA840: null
+            \u21B5: null
+    class `MenuPage`:
+        Title of the page.: null
+        Page icon: null
+    class `ItemDisableFilter`:
+        def `setFilterFunc`:
+            A callable object or None expected.: null
+    class `SortFilterProxyModel`:
+        def `setFilterFunc`:
+            A callable object or None expected.: null
+        def `lessThan`:
+            ' ': null
+    class `SearchWidget`:
+        def `__setupUi`:
+            Search.svg: null
+            Search: null
+    class `TabButton`:
+        def `__init__`:
+            '#000000': null
+    _Tab: null
+    text: null
+    icon: null
+    toolTip: null
+    button: null
+    data: null
+    palette: null
+    class `TabBarWidget`:
+        def `insertTab`:
+            tab-button: null
+            lastCategoryButton: null
+    class `PagedMenu`:
+        def `update_from_settings`:
+            quickmenu/show-categories: null
+    "\
+TabButton {{
+    qproperty-flat_: false;
+    qproperty-shadowColor_: {2};
+    background: {0};
+    border: none;
+    border-right: 3px solid {0};
+    border-bottom: 1px solid #9CACB4;
+    border-top: 1px solid {0}
+}}
+
+TabButton:checked {{
+    background: {1};
+    border: none;
+}}
+
+TabButton[lastCategoryButton='true']:checked {{
+    border-bottom: 1px solid #9CACB4;
+}}
+": null
+    class `QuickMenu`:
+        def `__init__`:
+            search-line: null
+            Search for a widget...: null
+            menu-frame: null
+            paged-menu: null
+            suggest-page: null
+            icons/Search.svg: null
+            darwin: null
+            Quick Search: 快速搜索
+        def `createPage`:
+            darwin: null
+        def `popup`:
+            quickmenu/size: null
+        def `exec_`:
+            exec_ is deprecated, use exec: null
+        def `hideEvent`:
+            quickmenu/size: null
+    class `WindowSizeGrip`:
+        def `setCorner`:
+            Qt.Corner flag expected: null
+        def `sizeHint`:
+            QMacStyle: null
+document/schemeedit.py:
+    application/vnd.{}-ows-fragment+xml: null
+    class `NoWorkflowError`:
+        def `__init__`:
+            No workflow model is set: null
+    class `SchemeEditWidget`:
+        class `OpenAnchors`:
+            Never: null
+            Always: null
+            OnShift: null
+        def `__init__`:
+            &Edit: 编辑(&E)
+            Widget: null
+            &Widget: 组件(&W)
+            Link: null
+        def `__setupActions`:
+            Clean Up: null
+            cleanup-action: null
+            Shift+A: null
+            Align widgets to a grid (Shift+A): null
+            Text: null
+            new-text-action: null
+            Add a text annotation to the workflow.: null
+            Font Size: null
+            %ipx: null
+            Text Annotation: null
+            new-quick-text-annotation-action: null
+            Arrow: null
+            new-arrow-action: null
+            Add a arrow annotation to the workflow.: null
+            Arrow Color: null
+            '#000': null
+            '#C1272D': null
+            '#662D91': null
+            '#1F9CDF': null
+            '#39B54A': null
+            Arrow Annotation: null
+            new-quick-arrow-annotation-action: null
+            undo-action: null
+            redo-action: null
+            Select all: null
+            select-all-action: null
+            Select all items.: null
+            Open: null
+            open-action: null
+            Open selected widget: null
+            Remove: null
+            remove-selected: null
+            Remove selected items: null
+            Ctrl+Backspace: null
+            Rename: 重命名
+            rename-action: null
+            Rename selected widget: null
+            darwin: null
+            Help: null
+            help-action: null
+            Show widget help: null
+            F1: null
+            Enabled: null
+            link-enable-action: null
+            link-remove-action: null
+            Remove link.: null
+            Insert Widget: null
+            node-insert-action: null
+            Insert widget.: null
+            Reset Signals: null
+            link-reset-action: null
+            Duplicate: null
+            duplicate-action: null
+            Ctrl+D: null
+            Copy: null
+            copy-action: null
+            Ctrl+C: null
+            Paste: null
+            paste-action: null
+            Ctrl+V: null
+            Window Groups: null
+            window-groups-action: null
+            Manage preset widget groups: null
+            window-groups-action-group: null
+            Save Window Group...: null
+            window-groups-save-action: null
+            Create and save a new window group.: null
+            Delete All Groups: null
+            window-groups-clear-action: null
+            Delete all saved widget presets: null
+            groups-separator: null
+            Bring Widgets to Front: 将组件置于最前
+            bring-widgets-to-front-action: null
+            Ctrl+Down: null
+        def `toolbarActions`:
+            action-zoom-in: null
+            action-zoom-out: null
+            action-zoom-reset: null
+        def `isModifiedStrict`:
+            'Modified strict check (modified flag: %s, ': null
+            'undo stack clean: %s, properties: %s)': null
+        def `uncleanProperties`:
+            context_settings: null
+        def `setScheme`:
+            widget_manager: null
+        def `setTitle`:
+            title: null
+        def `setDescription`:
+            description: null
+        def `enumerateTitle`:
+            ' ({0})': null
+        def `removeSelected`:
+            Remove: null
+        def `alignToGrid`:
+            position: null
+            Align To Grid: null
+        def `__desc_from_mime_data`:
+            application/vnd.orange-canvas.registry.qualified-name: null
+            application/vnv.orange-canvas.registry.qualified-name: null
+            utf-8: null
+        def `sceneMousePressEvent`:
+            darwin: null
+        def `sceneMouseReleaseEvent`:
+            Move: null
+        def `__onSelectionChanged`:
+            Open All: null
+            Open: null
+            Remove All: null
+            Remove: null
+        def `__onAnnotationAdded`:
+            Annotation added (%r): null
+        def `__onAnnotationRemoved`:
+            Annotation removed (%r): null
+        def `__toggleNewArrowAnnotation`:
+            Canceled new arrow annotation: null
+        def `__toggleNewTextAnnotation`:
+            Canceled new text annotation: null
+        def `__triggerNewTextAnnotation`:
+            text/markdown: null
+        def `__onHelpAction`:
+            help://search?: null
+            id: null
+        def `__showHelpFor`:
+            'Sorry there is no documentation available for ': null
+            this widget.: null
+        def `__toggleLinkEnabled`:
+            enabled: null
+            Set enabled: null
+        def `__nodeInsert`:
+            item: null
+            'Cannot insert node: links not possible.': null
+        def `__duplicateSelected`:
+            Duplicate: null
+        def `__copyToClipboard`:
+            copyToClipboard:: null
+        def `__pasteFromClipboard`:
+            pasteFromClipboard:: null
+        def `__paste`:
+            {item} ({_}): null
+            Paste: null
+        def `__startControlPointEdit`:
+            Unknown annotation item type %r: null
+            Control point editing started (%r).: null
+        def `__endControlPointEdit`:
+            Control point editing finished.: null
+        def `__reset_window_group_menu`:
+            groups-separator: null
+            Meta+P, Ctrl+{}: null
+        def `__saveWindowGroup`:
+            Save Group as...: null
+            def `store_group`:
+                Store Window Group: null
+                Update Window Group: null
+        def `__clearWindowGroups`:
+            Delete All Window Groups: null
+    class `SaveWindowGroup`:
+        def `__init__`:
+            Window Group 1: null
+            Save As:: null
+            Use as default: null
+            Automatically use this preset when opening the workflow.: null
+            "Save the current open widgets' window arrangement to the ": null
+            workflow view presets.: null
+        def `__accept_check`:
+            Confirm Overwrite: null
+            "The window group '{}' already exists. Do you want ": null
+            to replace it?: null
+            Replace: null
+    Cc: null
+    Cf: null
+    Cs: null
+    Co: null
+    Cn: null
+    def `remove_copy_number`:
+        \s+\(\d+\)\s*$: null
+    def `uniquify`:
+        {item}-{_}: null
+document/suggestions.py:
+    class `Suggestions`:
+        class `__Suggestions`:
+            def `__init__`:
+                widget-use-frequency.pickle: null
+            def `load_link_frequency`:
+                rb: null
+                Failed to open widget link frequencies.: null
+            def `default_link_frequency`:
+                File: null
+                Data Table: null
+            def `write_link_frequency`:
+                wb: null
+                Failed to write widget link frequencies.: null
+document/usagestatistics.py:
+    class `UsageStatistics`:
+        def `set_enabled`:
+            {} usage statistics tracking: null
+            Enabling: null
+            Disabling: null
+        def `begin_action`:
+            'Tried to set ': null
+            ' but ': null
+            ' was already set.': null
+        def `begin_extend_action`:
+            Tried to start extend action while current action already has events: null
+            Attempted to extend widget before it was logged. No action type was set.: null
+            Extended Widget: null
+        def `begin_insert_action`:
+            Tried to start insert action while current action already has events: null
+            'Attempted to log insert action between unknown widgets. ': null
+            No action was logged.: null
+            Source Widget: null
+            Sink Widget: null
+        def `end_action`:
+            End action called but no events were logged.: null
+            Type: null
+            Events: null
+            Query: null
+        def `log_node_add`:
+            Type: null
+            Widget Name: null
+            Widget: null
+        def `log_node_remove`:
+            Attempted to log node removal before its addition. No action was logged.: null
+            Type: null
+            Widget: null
+        def `_log_link`:
+            Attempted to log link action between unknown widgets. No action was logged.: null
+            Type: null
+            Source Widget: null
+            Sink Widget: null
+            Source Channel: null
+            Sink Channel: null
+            Source Open: null
+            Sink Open:: null
+        def `write_statistics`:
+            Date: null
+            Application Version: null
+            Operating System: null
+            ' ': null
+            Launch Count: null
+            startup/launch-count: null
+            Session: null
+        def `filename`:
+            usage-statistics.json: null
+        def `load`:
+            List[dict]: null
+            r: null
+            utf-8: null
+        def `store`:
+            w: null
+            utf-8: null
+gui/dock.py:
+    class `CollapsibleDockWidget`:
+        def `__init__`:
+            qt_dockwidget_closebutton: null
+        def `setWidget`:
+            "Please use the 'setExpandedWidget'/'setCollapsedWidget' ": null
+            methods to set the contents of the dock widget.: null
+gui/dropshadow.py:
+    class `DropShadowFrame`:
+        Drop shadow color: null
+        Drop shadow blur radius.: null
+        Drop shadow offset.: null
+gui/framelesswindow.py:
+    class `FramelessWindow`:
+        Window border radius: null
+gui/iconengine.py:
+    StyledIconEngine: null
+    SymbolIconEngine: null
+    class `StyledIconEngine`:
+        __palette: null
+        __styleObject: null
+        def `paletteFromStyleObject`:
+            palette: null
+    class `SymbolIconEngine`:
+        def `__renderStyledPixmap`:
+            {__name__}:SymbolIconEngine/{self.__cache_key}: null
+            {size.width()}x{size.height()}: null
+            {hex(palette.cacheKey())}-{cg}-{role}: null
+            {namespace}/{cachekey}/{style_key}: null
+        def `clone`:
+            QIconEngine: null
+gui/iconview.py:
+    class `LinearIconView`:
+        def `sizeHint`:
+            X: null
+            \nX: null
+gui/itemmodels.py:
+    class `FilterProxyModel`:
+        Filter: null
+        column: null
+        role: null
+        predicate: null
+gui/lineedit.py:
+    _ActionSlot: null
+    position: null
+    int: null
+    action: null
+    QAction: null
+    button: null
+    LineEditButton: null
+    autoHide: null
+    Any: null
+    class `LineEditButton`:
+        def `__init__`:
+            '#000000': null
+    class `LineEdit`:
+        def `_checkPosition`:
+            Invalid position: null
+gui/quickhelp.py:
+    class `StatusTipPromoter`:
+        def `eventFilter`:
+            whatsThis: null
+gui/splashscreen.py:
+    mightBeRichText: null
+gui/stackedwidget.py:
+    class `AnimatedStackedWidget`:
+        def `__init__`:
+            blendingFactor_: null
+        def `__transitionStart`:
+            Stack transition start (%s): null
+        def `__onTransitionFinished`:
+            Stack transition finished (%s): null
+gui/svgiconengine.py:
+    class `SvgIconEngine`:
+        __contents: null
+        __generator: null
+        __cache_id: null
+        def `pixmap`:
+            {}.SVGIconEngine/{}/{}x{}: null
+    class `StyledSvgIconEngine`:
+        __contents: null
+        __styled_contents_cache: null
+        __renderer: null
+        __cache_key: null
+        def `__init__`:
+            only one of palette or styleObject can be defined: null
+        def `__renderStyledPixmap`:
+            {__name__}:{__class__.__name__}/{self.__cache_key}: null
+            {hex(palette.cacheKey())}-{cg}-{role}: null
+            {namespace}/{style_key}/{size.width()}x{size.height()}: null
+        def `clone`:
+            QIconEngine: null
+    '
+* {{
+    color: {text};
+}}
+.ColorScheme-Text {{
+    color: {text};
+}}
+.ColorScheme-Background {{
+    color: {background};
+}}
+.ColorScheme-ViewBackground {{
+    color: {base};
+}}
+.ColorScheme-Highlight {{
+    color: {highlight};
+}}
+.ColorScheme-DisabledText {{
+    color: {disabled_text};
+}}
+.ColorScheme-Contrast {{
+    color: {contrast};
+}}
+.ColorScheme-Complement {{
+    color: {complement};
+}}
+.ColorScheme-PositiveText {{
+    color:#27ae60;
+}}
+.ColorScheme-NeutralText {{
+    color:#f67400;
+}}
+.ColorScheme-NegativeText {{
+    color:#da4453;
+}}
+': null
+    def `replace_css_style`:
+        current-color-scheme: null
+        class `StyleReplaceFilter`:
+            def `startElement`:
+                style: null
+                id: null
+                \n: null
+            def `endElement`:
+                style: null
+        utf-8: null
+gui/test.py:
+    class `QCoreAppTestCase`:
+        def `setUpClass`:
+            orangecanvas.testing: null
+            biolab.si: null
+        def `singleShot`:
+            Callable[[], Any]: null
+gui/toolbox.py:
+    ToolBox: null
+    _ToolBoxPage: null
+    index: null
+    widget: null
+    action: null
+    button: null
+    class `ToolBoxTabButton`:
+        def `__init__`:
+            font: null
+            QAbstractButton: null
+    class `ToolBox`:
+        Exclusive tabs: null
+        def `__init__`:
+            toolbox-scroll-area: null
+            toolbox-contents: null
+            toolbox-tab-action-group: null
+        def `createTabButton`:
+            toolbox-tab-button: null
+        def `__onTabActionToggled`:
+            action: null
+    A: null
+    B: null
+    C: null
+gui/toolgrid.py:
+    ToolGrid: null
+    _ToolGridSlot: null
+    button: null
+    action: null
+    row: null
+    column: null
+    class `ToolGridButton`:
+        def `__init__`:
+            darwin: null
+            QWidget: null
+        def `__textLayout`:
+            ' ': null
+            \n: null
+            &: null
+            &&: null
+    class `ToolGrid`:
+        def `__init__`:
+            sizePolicy: null
+        def `createButtonForAction`:
+            tool-grid-button: null
+gui/tooltree.py:
+    ToolTree: null
+    FlattenedTreeItemModel: null
+    class `ToolTree`:
+        def `__init__`:
+            tool-tree-view: null
+gui/utils.py:
+    def `disabled`:
+        setEnabled: null
+        isEnabled: null
+        %r does not have 'enabled' property: null
+    def `is_transparency_supported`:
+        win32: null
+        cygwin: null
+        darwin: null
+        linux: null
+        freebsd: null
+    def `is_x11_compositing_enabled`:
+        isCompositingManagerRunning: null
+    def `windows_set_current_process_app_user_model_id`:
+        nt: null
+    def `macos_set_nswindow_tabbing`:
+        darwin: null
+        .: null
+        libobjc: null
+        AppKit: null
+        NSWindow: null
+        setAllowsAutomaticWindowTabbing:: null
+    def `css_gradient`:
+        \n: null
+        '    stop: {0:f} {1}': null
+        qlineargradient(\n: null
+        '    x1: {x1}, y1: {y1}, x2: {x2}, y2: {y2},\n': null
+        {stops}): null
+    def `message_critical`:
+        An unexpected error occurred.: null
+        Error: null
+    def `message_warning`:
+        Death could come at any moment.: null
+        Murphy lurks about. Remember to save frequently.: null
+        Warning: null
+    def `message_information`:
+        Information: null
+        I am not a number.: null
+    def `message`:
+        Message: null
+        I am neither a postman nor a doctor.: null
+    def `innerGlowBackgroundPixmap`:
+        'InnerGlowBackground ': null
+        ' ': null
+    def `shadowTemplatePixmap`:
+        'InnerShadowTemplate ': null
+        ' ': null
+    def `innerShadowPixmap`:
+        'InnerShadow ': null
+        ' ': null
+gui/windowlistmanager.py:
+    WindowListManager: null
+    class `WindowListManager`:
+        def `instance`:
+            WindowListManager: null
+        def `__init__`:
+            window-list-manager-action-group: null
+        def `addWindow`:
+            {window} already added: null
+        def `createActionForWindow`:
+            action-canvas-window-list-manager-window-action: null
+gui/examples/dock.py:
+    def `main`:
+        Expand: null
+        Ctrl+D: null
+    __main__: null
+gui/examples/toolbox.py:
+    def `main`:
+        A Label: null
+        Another\nlabel: null
+        Tab 1: null
+        Tab 2: null
+        The second tab: null
+        Tab 3: null
+        Tab 4: null
+        <h1>Hello Visitor</h1>: null
+        <p>Are you interested in some of our wares?</p>: null
+        Dear friend: null
+    __main__: null
+gui/examples/toolgrid.py:
+    def `main`:
+        A: null
+        B: null
+        This one is longer.: null
+        Not done yet!: null
+        The quick brown fox ... does something I guess: null
+    __main__: null
+help/intersphinx.py:
+    utf-8: null
+    def `read_inventory_v1`:
+        mod: null
+        py:module: null
+        '#module-': null
+        py:: null
+        '#': null
+        -: null
+    def `read_inventory_v2`:
+        utf-8: null
+        zlib: null
+        def `split_lines`:
+            \n: null
+            utf-8: null
+        (?x)(.+?)\s+(\S*:\S*)\s+(\S+)\s+(\S+)\s+(.*): null
+        $: null
+help/manager.py:
+    class `HelpManager`:
+        def `initialize`:
+            `HelpManager.initialize` is deprecated and does nothing.: null
+        def `get_provider`:
+            Could not get distribution for '%s': null
+            'Error while initializing help ': null
+            provider for %r: null
+        def `get_help`:
+            help: null
+            search: null
+        def `description_by_id`:
+            No registry set. Cannot resolve: null
+        def `search`:
+            id: null
+        def `search_async`:
+            id: null
+    def `_replacements_for_dist`:
+        PROJECT_NAME: null
+        PROJECT_NAME_LOWER: null
+        PROJECT_VERSION: null
+        DATA_DIR: null
+        data: null
+        URL: null
+        DEVELOP_ROOT: null
+    def `create_intersphinx_provider`:
+        objects.inv: null
+        Local doc root '%s' does not exist.: null
+    def `create_html_provider`:
+        Local doc root '%s' does not exist.: null
+    def `create_html_inventory_provider`:
+        Local doc root '%s' does not exist: null
+    intersphinx: null
+    html-simple: null
+    html-index: null
+    def `get_help_provider_for_distribution`:
+        Distribution: null
+        orange.canvas.help: null
+        orangecanvas.help: null
+        Exception {}: null
+        Created %s provider for %s: null
+help/provider.py:
+    class `HelpProvider`:
+        def `_networkAccessManagerInstance`:
+            help: null
+            cache_size_mb: null
+        def `search_async`:
+            QUrl: null
+    class `BaseInventoryProvider`:
+        def `__init__`:
+            file: null
+        def `_fetch_inventory`:
+            rb: null
+        def `_on_finished`:
+            \nGET:: null
+            '  (served from cache)': null
+            latin-1: null
+            :: null
+            'An error occurred while fetching ': null
+            help inventory '{0}': null
+        def `search_async`:
+            QUrl: null
+    class `IntersphinxHelpProvider`:
+        def `search`:
+            std:label: null
+        def `_load_inventory`:
+            '# Sphinx inventory version 1': null
+            '# Sphinx inventory version 2': null
+            Invalid/unknown intersphinx inventory format.: null
+            '{0} does not seem to be an intersphinx ': null
+            inventory file: null
+    class `SimpleHelpProvider`:
+        def `search`:
+            {}.html: null
+            index.html: null
+            http: null
+            https: null
+            .html: null
+            /: null
+    class `HtmlIndexProvider`:
+        def `_load_inventory`:
+            Error reading help index.: null
+            Could not determine html charset from contents.: null
+            utf-8: null
+            Error parsing: null
+        def `_parse`:
+            .//*[@id='widgets']//li/a: null
+            href: null
+            No help references found. Wrong configuration??: null
+    def `sniff_html_charset`:
+        def `parse_content_type`:
+            Tuple[str, List[Tuple[str, str]]]: null
+            ;: null
+            =: null
+        class `CharsetSniff`:
+            def `handle_starttag`:
+                List[Tuple[str, Optional[str]]]: null
+                meta: null
+                charset: null
+                http-equiv: null
+                content-type: null
+                content: null
+        utf-16: null
+        latin-1: null
+localization/__init__.py:
+    def `pl`:
+        '|': null
+        yY: null
+        aeiouAEIOU: null
+        ies: null
+        s: null
+    def `get_languages`:
+        orangecanvas: null
+        i18n: null
+        .json: null
+        'Invalid language file ': null
+    English: null
+    def `language_changed`:
+        application/language: null
+        application/last-used-language: null
+    def `update_last_used_language`:
+        application/language: null
+        English: null
+        application/last-used-language: null
+    class `Translator`:
+        def `__init__`:
+            biolab.si: null
+            Orange: null
+            application/language: null
+            i18n: null
+            {lang_eng}.json: null
+            {DEFAULT_LANGUAGE}.json: null
+            Missing language file {path}: null
+        def `c`:
+            <string>: null
+            eval: null
+localization/si.py:
+    def `plsi`:
+        '|': null
+        a: null
+        i: null
+        e: null
+        ov: null
+    def `plsi_sz`:
+        {n:_}: null
+        _: null
+        1: null
+        z: null
+        zszzzzsssssssssszzzzzz: null
+        s: null
+        0: null
+        zzzssssszz: null
+    def `z_besedo`:
+        nič: null
+        m: null
+        en: null
+        enega: null
+        enemu: null
+        enem: null
+        enim: null
+        f: null
+        ena: null
+        ene: null
+        eni: null
+        eno: null
+        n: null
+        dva: null
+        dveh: null
+        dvema: null
+        dve: null
+        tri: null
+        treh: null
+        trem: null
+        tremi: null
+        štiri: null
+        štirih: null
+        štirim: null
+        štirimi: null
+        pet: null
+        petih: null
+        petim: null
+        petimi: null
+        šest: null
+        šestih: null
+        šestim: null
+        šestimi: null
+        sedem: null
+        sedmih: null
+        sedmim: null
+        sedmimi: null
+        osem: null
+        osmih: null
+        osmim: null
+        osmimi: null
+        devet: null
+        devetih: null
+        devetim: null
+        devetimi: null
+        deset: null
+        desetih: null
+        desetim: null
+        desetimi: null
+preview/previewbrowser.py:
+    '
+
+': null
+    '
+<h3 class=item-heading>{name}</h3>
+<p class=item-description>
+{description}
+</p>
+
+': null
+    class `PreviewBrowser`:
+        def `__init__`:
+            top-layout: null
+            heading: null
+            description-label: null
+            preview-image: null
+            <b>{0!s}</b>: null
+            Path:: null
+            path-label: null
+            path-text: null
+            preview-list-view: null
+        def `setPreviewMargins`:
+            top-layout: null
+        def `__update`:
+            No description.: null
+            \n: null
+            <br/>: null
+            Untitled: null
+            utf-8: null
+    def `contractuser`:
+        ~/: null
+        ~: null
+preview/previewdialog.py:
+    class `PreviewDialog`:
+        def `__setupUi`:
+            <h3>{0}</h3>: null
+            Preview: null
+            button-container: null
+preview/previewmodel.py:
+    '<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="161.8mm" height="100.0mm"
+ xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+ version="1.2" baseProfile="tiny">
+</svg>
+': null
+    class `PreviewModel`:
+        def `delayedScanUpdate`:
+            'delayedScanUpdate: Start': null
+        def `__process_next`:
+            'delayedScanUpdate: Next %i': null
+            'delayedScanUpdate: Stop': null
+            'An unexpected error occurred while ': null
+            scanning '%s'.: null
+    class `PreviewItem`:
+        def `__init__`:
+            Untitled: null
+            No description.: null
+        def `setName`:
+            untitled: null
+        def `setThumbnail`:
+            utf-8: null
+preview/scanner.py:
+    class `PreviewHandler`:
+        def `startElement`:
+            scheme: null
+            version: null
+            1.0: null
+            2.0: null
+            title: null
+            description: null
+            thumbnail: null
+        def `endElement`:
+            name: null
+            description: null
+            thumbnail: null
+    def `filter_properties`:
+        class `PropertiesFilter`:
+            def `startElement`:
+                properties: null
+            def `endElement`:
+                properties: null
+        utf-8: null
+    def `scheme_svg_thumbnail`:
+        rb: null
+    def `scan_update`:
+        %r is malformed (%r): null
+        Could not render scheme preview for %r: null
+registry/__init__.py:
+    light-orange: null
+    '#FFD39F': null
+    orange: null
+    '#FFA840': null
+    light-red: null
+    '#FFB7B1': null
+    red: null
+    '#FF7063': null
+    light-pink: null
+    '#FAC1D9': null
+    pink: null
+    '#F584B4': null
+    light-purple: null
+    '#E5BBFB': null
+    purple: null
+    '#CB77F7': null
+    light-blue: null
+    '#CAE1FC': null
+    blue: null
+    '#95C3F9': null
+    light-turquoise: null
+    '#C3F3F3': null
+    turquoise: null
+    '#87E8E8': null
+    light-green: null
+    '#ACE3CE': null
+    green: null
+    '#5AC79E': null
+    light-grass: null
+    '#DFECB0': null
+    grass: null
+    '#C0D962': null
+    light-yellow: null
+    '#F7F5A7': null
+    yellow: null
+    '#F0EC4F': null
+    def `global_registry`:
+        _default: null
+        "'global_registry()' - running widget discovery.": null
+        "'global_registry()' discovery finished.": null
+    def `set_global_registry`:
+        _default: null
+        "'set_global_registry()' - setting registry.": null
+registry/base.py:
+    class `WidgetRegistry`:
+        def `__init__`:
+            Expected a 'WidgetRegistry' got %r.: null
+        def `widgets`:
+            priority: null
+        def `register_widget`:
+            Expected a 'WidgetDescription' got %r.: null
+            %r already exists in the registry.: null
+            Unspecified: null
+            Creating a default category %r.: null
+        def `register_category`:
+            Expected a 'CategoryDescription' got %r.: null
+            Creating a default category name.: null
+            default: null
+            A category with %r name already exists: null
+registry/cache.py:
+    def `registry_cache_filename`:
+        registry-cache.pck: null
+        registry.registry-cache: null
+        Creating directory %r: null
+    def `registry_cache`:
+        Loading widget registry cache (%r).: null
+        rb: null
+        Could not load registry cache.: null
+    def `save_registry_cache`:
+        Saving widget registry cache with %i entries (%r).: null
+        wb: null
+        Could not save registry cache: null
+registry/description.py:
+    DescriptionError: null
+    WidgetSpecificationError: null
+    SignalSpecificationError: null
+    CategorySpecificationError: null
+    Single: null
+    Multiple: null
+    Default: null
+    NonDefault: null
+    Explicit: null
+    Dynamic: null
+    InputSignal: null
+    OutputSignal: null
+    WidgetDescription: null
+    CategoryDescription: null
+    class `InputSignal`:
+        def `__str__`:
+            '{0.__name__}(name={name!r}, type={type!r}, ': null
+            handler={handler!r}, ...): null
+    def `input_channel_from_args`:
+        'tuple, dict or InputSignal expected ': null
+        (got {0!r}): null
+    class `OutputSignal`:
+        def `__str__`:
+            '{0.__name__}(name={name!r}, type={type!r}, ': null
+            ...): null
+    def `output_channel_from_args`:
+        'tuple, dict or OutputSignal expected ': null
+        (got {0!r}): null
+    class `WidgetDescription`:
+        def `__init__`:
+            "'qualified_name' must be supplied.": null
+        def `__str__`:
+            'WidgetDescription(name=%(name)r, id=%(id)r), ': null
+            category=%(category)r, ...): null
+        def `from_module`:
+            "'WidgetDescription.from_module' is deprecated": null
+    class `CategoryDescription`:
+        def `__str__`:
+            CategoryDescription(name=%(name)r, ...): null
+        def `from_package`:
+            "'CategoryDescription.from_package' is deprecated": null
+registry/discovery.py:
+    _CacheEntry: null
+    mod_path: null
+    name: null
+    mtime: null
+    project_name: null
+    project_version: null
+    exc_type: null
+    exc_val: null
+    description: null
+    def `default_category_name_for_module`:
+        .: null
+        widgets: null
+    class `WidgetDiscovery`:
+        def `__init__`:
+            "'WidgetRegistry', 'Handler' or None expected": null
+            !VERSION: null
+        def `run`:
+            'An exception occurred while loading ': null
+            entry point '%s': null
+            __path__: null
+            Cannot handle entry point %r: null
+            An exception occurred while processing %r.: null
+        def `process_widget_module`:
+            Invalid widget specification.: null
+        def `process_category_package`:
+            widget_discovery: null
+            category_description: null
+            Error calling 'category_description' in %r.: null
+            Package %r does not describe a category.: null
+        def `process_loader`:
+            Error calling %r: null
+        def `process_iter`:
+            'Category or Widget Description instance ': null
+            expected. Got %r.: null
+        def `iter_widget_descriptions`:
+            .: null
+            .py: null
+            Ignoring %r.: null
+            Could not import %r.: null
+            Error while importing %r.: null
+            Problem parsing %r: null
+    def `fix_pyext`:
+        .pyo: null
+        pyc: null
+    def `widget_descriptions_from_package`:
+        .: null
+        Error importing %r.: null
+        Error in %r: null
+registry/qt.py:
+    class `QtWidgetRegistry`:
+        def `item_for_widget`:
+            Unspecified: null
+        def `create_action_for_item`:
+            item: null
+        def `_cat_desc_to_std_item`:
+            icons/default-category.svg: null
+        def `_widget_desc_to_std_item`:
+            icons/default-widget.svg: null
+            'ul { margin-top: 1px; margin-bottom: 1px; }': null
+    '\
+<html>
+<head>
+<style type="text/css">
+{style}
+</style>
+</head>
+<body>
+{tooltip}
+</body>
+</html>
+': null
+    def `tooltip_helper`:
+        <b>{name}</b>: null
+        Orange: null
+        ' (from {0})': null
+        {0}: null
+        <li>{name} ({class_name})</li>: null
+        Inputs:<ul>{0}</ul>: 输入：<ul>{0}</ul>
+        No inputs: 无输入
+        Outputs:<ul>{0}</ul>: 输出：<ul>{0}</ul>
+        No outputs: 无输出
+        <hr/>: null
+    def `whats_this_helper`:
+        help://search?: null
+        id: null
+        <h3>{0}</h3>: null
+        <p>{0}</p>: null
+        <a href='{0}'>more...</a>: null
+        \n: null
+    def `run_discovery`:
+        run_discovery is deprecated and will be removed.: null
+registry/utils.py:
+    def `widget_from_module_globals`:
+        .: null
+        WIDGET_CLASS: null
+        NAME: null
+        %s.%s: null
+        ID: null
+        INPUTS: INPUTS
+        OUTPUTS: OUTPUTS
+        CATEGORY: null
+        VERSION: null
+        DESCRIPTION: null
+        LONG_DESCRIPTION: null
+        AUTHOR: null
+        AUTHOR_EMAIL: null
+        MAINTAINER: null
+        MAINTAINER_EMAIL: null
+        HELP: null
+        HELP_REF: null
+        URL: null
+        ICON: null
+        PRIORITY: null
+        KEYWORDS: null
+        BACKGROUND: null
+        REPLACES: null
+    def `category_from_package_globals`:
+        NAME: null
+        DESCRIPTION: null
+        LONG_DESCRIPTION: null
+        AUTHOR: null
+        AUTHOR_EMAIL: null
+        MAINTAINER: null
+        MAINTAINER_MAIL: null
+        URL: null
+        HELP: null
+        KEYWORDS: null
+        WIDGETS: null
+        PRIORITY: null
+        ICON: null
+        BACKGROUND: null
+        HIDDEN: null
+        prototypes: null
+    def `search_filter_query_helper`:
+        -: null
+        ' ': null
+registry/tests/__init__.py:
+    def `make_module`:
+        {}.{}: null
+    Test: null
+    This is a test.: null
+    This. Is. A. Test.: null
+    constants: null
+    Constants: null
+    zero: null
+    Zero: null
+    value: null
+    one: null
+    One: null
+    operators: null
+    Operators: null
+    add: null
+    Add: null
+    left: null
+    set_left: null
+    right: null
+    set_right: null
+    sub: null
+    Subtract: null
+    mult: null
+    Multiply: null
+    div: null
+    Divide: null
+    def `small_testing_registry`:
+        Constants: null
+        light-orange: null
+        zero: null
+        value: null
+        int: null
+        val: null
+        one: null
+        unit: null
+        tuple: null
+        Operators: null
+        grass: null
+        add: null
+        left: null
+        set_left: null
+        right: null
+        set_right: null
+        droite: null
+        result: null
+        sub: null
+        mult: null
+        div: null
+        negate: null
+        set_value: null
+        Structure: null
+        red: null
+        cons: null
+        first: null
+        object: null
+        set_first: null
+        second: null
+        set_second: null
+        decons: null
+        set_cons: null
+        First matched: null
+        Second matched: null
+        empty: null
+        No match: null
+scheme/annotations.py:
+    class `SchemeArrowAnnotation`:
+        def `__init__`:
+            red: null
+    class `SchemeTextAnnotation`:
+        def `__init__`:
+            text/plain: null
+        def `set_text`:
+            text/plain: null
+        def `set_content`:
+            text/plain: null
+scheme/events.py:
+    WorkflowEvent: null
+    NodeEvent: null
+    LinkEvent: null
+    AnnotationEvent: null
+    WorkflowEnvChanged: null
+scheme/link.py:
+    def `resolve_types`:
+        An unexpected error while resolving type {!r}:\n{}: null
+    def `_get_first_type`:
+        'Multiple types specified, but using only the first. ': null
+        Use `{newname}` instead.: null
+        no type spec: null
+        {!r} does not resolve to a type: null
+    class `SchemeLink`:
+        def `__init__`:
+            %r not in in nodes output channels.: null
+            %r not in in nodes input channels.: null
+            Cannot connect %r to %r: null
+        def `source_type`:
+            `source_type()` is deprecated. Use `source_types()`.: null
+            source_types: null
+        def `sink_type`:
+            `sink_type()` is deprecated. Use `sink_types()`.: null
+            sink_types: null
+        def `__str__`:
+            {0}(({1}, {2}) -> ({3}, {4})): null
+scheme/node.py:
+    class `SchemeNode`:
+        def `input_channel`:
+            %r is not a valid input channel for %r.: null
+        def `output_channel`:
+            %r is not a valid output channel for %r.: null
+        def `set_state_message`:
+            "'message' with no id was ignored. ": null
+            This will raise an error in the future.: null
+        def `__str__`:
+            SchemeNode(description_id=%r, title=%r, ...): null
+scheme/readwrite.py:
+    def `_ast_parse_expr`:
+        <source>: null
+        eval: null
+    def `string_eval`:
+        %r is not a string literal: null
+    def `tuple_eval`:
+        %r is not a tuple literal: null
+        Can only contain numbers or strings: null
+    def `_terminal_value`:
+        Not a terminal: null
+    _scheme: null
+    title: null
+    version: null
+    description: null
+    nodes: null
+    _node: null
+    links: null
+    _link: null
+    annotations: null
+    _annotation: null
+    session_state: null
+    _session_data: null
+    id: null
+    name: null
+    position: null
+    project_name: null
+    qualified_name: null
+    data: null
+    _data: null
+    format: null
+    source_node_id: null
+    sink_node_id: null
+    source_channel: null
+    source_channel_id: null
+    sink_channel: null
+    sink_channel_id: null
+    enabled: null
+    type: null
+    params: null
+    _text_params: null
+    _arrow_params: null
+    geometry: null
+    text: null
+    font: null
+    content_type: null
+    color: null
+    _window_group: null
+    default: null
+    state: null
+    groups: null
+    def `parse_ows_etree_v_2_0`:
+        version: null
+        node_properties/properties: null
+        node_id: null
+        format: null
+        2.0: null
+        data: null
+        nodes/node: null
+        id: null
+        position: null
+        title: null
+        name: null
+        project_name: null
+        qualified_name: null
+        links/link: null
+        source_node_id: null
+        sink_node_id: null
+        source_channel: null
+        source_channel_id: null
+        sink_channel: null
+        sink_channel_id: null
+        enabled: null
+        true: null
+        annotations/*: null
+        text: null
+        rect: null
+        (0.0, 0.0, 20.0, 20.0): null
+        font-family: null
+        font-size: null
+        family: null
+        size: null
+        type: null
+        text/plain: null
+        arrow: null
+        start: null
+        (0, 0): null
+        end: null
+        fill: null
+        red: null
+        Unknown annotation '%s'. Skipping.: null
+        session_state/window_groups/group: null
+        default: null
+        false: null
+        window_state: null
+        ascii: null
+        description: null
+    def `parse_ows_stream`:
+        scheme: null
+        Invalid Orange Workflow Scheme file: null
+        version: null
+        widgets: null
+        'Cannot open Orange Workflow Scheme v1.0. This format is no ': null
+        longer supported: null
+        Invalid Orange Workflow Scheme file (missing version).: null
+        2.0: null
+        2.1: null
+        Unsupported format version {version}: null
+    def `scheme_load`:
+        Could not load properties for %r.: null
+        text: null
+        arrow: null
+        'Ignoring unknown annotation type: %r': null
+    def `_find_source_channel`:
+        '{link.source_channel!r} is not a valid output channel ': null
+        for {node.description.name!r}.: null
+    def `_find_sink_channel`:
+        '{link.sink_channel!r} is not a valid input channel ': null
+        for {node.description.name!r}.: null
+    def `scheme_to_etree`:
+        literal: null
+        scheme: null
+        version: null
+        2.0: null
+        title: null
+        description: null
+        nodes: null
+        id: null
+        name: null
+        qualified_name: null
+        project_name: null
+        position: null
+        scheme_node_type: null
+        %s.%s: null
+        node: null
+        links: null
+        source_node_id: null
+        sink_node_id: null
+        source_channel: null
+        sink_channel: null
+        enabled: null
+        true: null
+        false: null
+        source_channel_id: null
+        sink_channel_id: null
+        link: null
+        annotations: null
+        text: null
+        type: null
+        rect: null
+        font-family: null
+        family: null
+        font-size: null
+        size: null
+        arrow: null
+        start: null
+        end: null
+        fill: null
+        Can't save %r: null
+        thumbnail: null
+        node_properties: null
+        Error serializing properties for node %r: null
+        properties: null
+        node_id: null
+        format: null
+        session_state: null
+        window_groups: null
+        group: null
+        default: null
+        window_state: null
+        ascii: null
+        window_group: null
+    def `scheme_to_ows_stream`:
+        literal: null
+        utf-8: null
+    def `indent`:
+        \t: null
+        def `indent_`:
+            \n: null
+    def `dumps`:
+        literal: null
+        Could not serialize to a literal string: null
+        json: null
+        Could not serialize to a json string: null
+        pickle: null
+        ascii: null
+        Unsupported format %r: null
+        Using pickle fallback: null
+        Something strange happened.: null
+    def `loads`:
+        literal: null
+        json: null
+        pickle: null
+        ascii: null
+        Unknown format: null
+    def `literal_dumps`:
+        def `check`:
+            'Non-finite values can not be ': null
+            serialized as a python literal: null
+            {0} is a recursive structure: null
+            '{0} can not be serialized as a python ': null
+            literal: null
+        def `check_relaxed`:
+            'Non-finite values can not be ': null
+            serialized as a python literal: null
+            {0} is a recursive structure: null
+            '{0} can not be serialized as a python ': null
+            literal: null
+scheme/scheme.py:
+    T: null
+    class `Scheme`:
+        def `insert_node`:
+            Node already in scheme.: null
+            Added node %r to scheme %r.: null
+        def `new_node`:
+            Expected %r, got %r.: null
+        def `remove_node`:
+            Node is not in the scheme.: null
+            Removed node %r from scheme %r.: null
+        def `insert_link`:
+            Added link %r (%r) -> %r (%r) to scheme %r.: null
+        def `remove_link`:
+            Link is not in the scheme.: null
+            Removed link %r (%r) -> %r (%r) from scheme %r.: null
+        def `check_connect`:
+            Cannot create self cycle in the scheme: null
+            Cannot create cycles in the scheme: null
+            Cannot connect %r to %r.: null
+            A link from %r (%r) -> %r (%r) already exists: null
+            %r is already connected.: null
+        def `insert_annotation`:
+            Cannot add the same annotation multiple times: null
+        def `save_to`:
+            wb: null
+        def `load_from`:
+            Scheme is not empty.: null
+            rb: null
+        def `window_group_presets`:
+            _presets: null
+        def `set_window_group_presets`:
+            _presets: null
+scheme/signalmanager.py:
+    V: null
+    K: null
+    class `Signal`:
+        Signal: null
+        link: null
+        value: null
+        id: null
+        index: null
+        Type[New]: null
+        Type[Update]: null
+        Type[Close]: null
+    enabled: null
+    class `_LazyValueType`:
+        class `LazyValueMeta`:
+            def `__repr__`:
+                LazyValue[{cls.type().__name__}]: null
+    class `_OutputState`:
+        flags: null
+        outputs: null
+        def `__repr__`:
+            State(flags={}, outputs={!r}): null
+    class `_LinkExtra`:
+        flags: null
+    class `SignalManager`:
+        def `__on_node_removed`:
+            Removing pending signals for '%s'.: null
+        def `__on_link_added`:
+            Scheduling signal data update for '%s'.: null
+        def `eventFilter`:
+            Scheduling close signal (%s).: null
+        def `__on_link_enabled_changed`:
+            Link %s enabled. Scheduling signal data update.: null
+        def `send`:
+            "'send' called with no workflow!.": null
+            `id` parameter is deprecated and will be removed in v0.2: null
+            '%r sending %r (id: %r) on channel %r': null
+            'Sending multiple values on the same output channel via ': null
+            different ids is no longer supported.: null
+            %r clear invalidated flag on channel %r: null
+        def `invalidate`:
+            %r invalidating channel %r: null
+        def `purge_link`:
+            `purge_link` is deprecated.: null
+        def `process_queued`:
+            `max_nodes` is deprecated and will be removed in the future: null
+            Cannot re-enter 'process_queued': null
+            Can't process in state %i: null
+        def `process_node`:
+            Processing %r, sending %i signals.: null
+        def `__process_next`:
+            Received 'UpdateRequest' while not in 'Running' state: null
+            "Received 'UpdateRequest' while in 'process_queued'. ": null
+            'An update will be re-scheduled when exiting the ': null
+            current update.: null
+        def `__process_next_helper`:
+            'Process next, queued signals: %i, nactive: %i ': null
+            '(max_active: %i)': null
+            title: null
+            'Pending nodes: %s': null
+            'Blocking nodes: %s': null
+            'Invalidated nodes: %s': null
+            'Nodes ready for update: %s': null
+        def `max_active`:
+            MAX_ACTIVE_NODES: null
+            max-active-nodes: null
+    def `compress_signals`:
+        Must preserve signal id: null
+    def `compress_single`:
+        def `is_none_update`:
+            Optional[Signal]: null
+        def `is_update`:
+            Optional[Signal]: null
+        def `is_close`:
+            Optional[Signal]: null
+scheme/widgetmanager.py:
+    WidgetManager: null
+    class `WidgetManager`:
+        class `CreationPolicy`:
+            Normal: null
+            Immediate: null
+            OnDemand: null
+        def `__init__`:
+            action-canvas-windows-list-head: null
+        def `__add_widget_for_node`:
+            Creating widget for node %s: null
+            widgetmanager-error-placeholder: null
+            <pre>: null
+            </pre>: null
+            Raise Canvas to Front: null
+            action-canvas-raise-canvas: null
+            Raise containing canvas workflow window: null
+            Ctrl+Up: null
+            Raise Descendants: null
+            action-canvas-raise-descendants: null
+            Raise all immediate descendants of this node: null
+            Ctrl+Shift+Right: null
+            Raise Ancestors: null
+            action-canvas-raise-ancestors: null
+            Raise all immediate ancestors of this node: null
+            Ctrl+Shift+Left: null
+        def `__process_init_queue`:
+            "__process_init_queue: '%s'": null
+        def `__update_actions_state`:
+            action-canvas-raise-ancestors: null
+            action-canvas-raise-descendants: null
+styles/__init__.py:
+    _T: null
+    def `breeze_light`:
+        '#30363C': null
+        '#888786': null
+        '#EFF0F1': null
+        '#FCFCFC': null
+        '#00B0EF': null
+        '#0057B4': null
+        '#ffffff': null
+        '#c4c9cd': null
+        '#888e93': null
+        '#474a4c': null
+    breeze-light: null
+    breeze-dark: null
+    zion-reversed: null
+    dark: null
+    def `style_sheet`:
+        def `process_qss`:
+            ^\s*@([a-zA-Z0-9_]+?)\s*:\s*([a-zA-Z0-9_/]+?);\s*$: null
+        r: null
+        utf-8: null
+        qss: null
+utils/__init__.py:
+    dotted_getattr: null
+    qualified_name: null
+    name_lookup: null
+    type_lookup: null
+    type_lookup_: null
+    asmodule: null
+    check_type: null
+    check_arg: null
+    check_subclass: null
+    unique: null
+    assocv: null
+    assocf: null
+    group_by_all: null
+    mapping_get: null
+    findf: null
+    set_flag: null
+    is_flag_set: null
+    UNUSED: null
+    H: null
+    A: null
+    B: null
+    C: null
+    K: null
+    V: null
+    F: null
+    def `dotted_getattr`:
+        .: null
+    def `qualified_name`:
+        builtins: null
+        %s.%s: null
+    def `type_str`:
+        Union[: null
+        ', ': null
+        ]: null
+        builtin.: null
+    def `name_lookup`:
+        .: null
+        builtins.: null
+    def `type_lookup`:
+        "'{}' is a {!r} not a type": null
+    def `check_type`:
+        Expected %r. Got %r: null
+    def `check_subclass`:
+        Expected %r. Got %r: null
+    def `unique`:
+        Callable[[A], H]: null
+    def `findf`:
+        Union[A, B]: null
+    qsizepolicy_is_expanding: null
+    orangecanvas.gui.utils.qsizepolicy_is_expanding: null
+    qsizepolicy_is_shrinking: null
+    orangecanvas.gui.utils.qsizepolicy_is_shrinking: null
+    is_event_source_mouse: null
+    orangecanvas.gui.utils.is_event_source_mouse: null
+    def `__getattr__`:
+        "'{__name__}.{name}' is deprecated, use '{_LAZY_DEPRECATED[name]}'": null
+utils/after_exit.py:
+    def `run_after_exit`:
+        --arg=: null
+        --log=: null
+        -m: null
+    register_at_fork: null
+    def `main`:
+        -f: null
+        -a: null
+        --arg: null
+        append: null
+        --log: null
+        Log file: null
+        w: null
+        'Blocking on read from fd: %d': null
+        Unexpected content %r from parent: null
+        Parent closed fd; %d: null
+        'Starting new process with cmd: %r': null
+    __main__: null
+utils/asyncutils.py:
+    def `get_event_loop`:
+        QCoreApplication is not running: null
+        Called from non-main thread: null
+utils/graph.py:
+    traverse_bf: null
+    strongly_connected_components: null
+    H: null
+utils/image.py:
+    def `qimage_copy_from_buffer`:
+        Wrong data.shape (expected ({w}, {h}) got {data.shape}): null
+utils/markup.py:
+    def `render_plain`:
+        '<p style="white-space: pre-wrap;">': null
+        </p>: null
+    def `render_rst`:
+        report_level: null
+        output-encoding: null
+        utf-8: null
+        html: null
+    text/plain: null
+    text/rst: null
+    text/x-rst: null
+    text/markdown: null
+    text/html: null
+    def `render_as_rich_text`:
+        text/plain: null
+        ;: null
+utils/overlay.py:
+    class `NotificationMessageWidget`:
+        _Button: null
+        button: null
+        role: null
+        stdbutton: null
+        def `__init__`:
+            Ok: null
+            No: null
+            icon-label: null
+            title-label: null
+            text-label: null
+            darwin: null
+        def `addButton`:
+            'Wrong number of arguments for ': null
+            addButton(QAbstractButton, role): null
+            addButton(StandardButton): null
+            addButton(str, ButtonRole): null
+            darwin: null
+    def `proxydoc`:
+        __doc__: null
+    class `NotificationWidget`:
+        def `__init__`:
+            Ok: null
+            No: null
+            darwin: null
+        def `resizeEvent`:
+            darwin: null
+        def `fromNotification`:
+            title: null
+            text: null
+            icon: null
+            acceptLabel: null
+            rejectLabel: null
+            standardButtons: null
+    class `NotificationOverlay`:
+        def `nextWidget`:
+            Received next notification signal while no notification is displayed: null
+    class `NotificationServer`:
+        def `_nextNotification`:
+            Received next notification signal while no notification is enqueued: null
+utils/pickle.py:
+    class `Pickler`:
+        def `persistent_id`:
+            scheme: null
+            SchemeNode_: null
+            SchemeLink_: null
+            BaseSchemeAnnotation_: null
+    class `Unpickler`:
+        def `persistent_load`:
+            scheme: null
+            SchemeNode_: null
+            _: null
+            SchemeLink_: null
+            BaseSchemeAnnotation_: null
+            Unsupported persistent object: null
+    def `scratch_swp_base_name`:
+        scratch.swp.p: null
+        scratch-crashes: null
+    def `swp_name`:
+        .: null
+        .swp.p: null
+        startup/load-crashed-workflows: null
+    def `glob_scratch_swps`:
+        .*: null
+utils/pkgmeta.py:
+    Distribution: null
+    EntryPoint: null
+    entry_points: null
+    normalize_name: null
+    trim: null
+    trim_leading_lines: null
+    trim_trailing_lines: null
+    parse_meta: null
+    get_dist_meta: null
+    get_distribution: null
+    develop_root: null
+    get_dist_url: null
+    def `normalize_name`:
+        [-_.]+: null
+        -: null
+        _: null
+    def `_direct_url`:
+        direct_url.json: null
+    def `develop_root`:
+        dir_info: null
+        editable: null
+        url: null
+        file: null
+        {normalize_name(dist.name)}.egg-info/: null
+        setup.py: null
+    def `trim`:
+        \n: null
+    Platform: null
+    Supported-Platform: null
+    Classifier: null
+    Requires-Dist: null
+    Provides-Dist: null
+    Obsoletes-Dist: null
+    Project-URL: null
+    def `parse_meta`:
+        Description: null
+        Metadata-Version: null
+        1.3: null
+    def `get_dist_url`:
+        Home-page: null
+    def `get_dist_meta`:
+        Description: null
+utils/propertybindings.py:
+    def `find_meta_property`:
+        %s does no have a property named %r.: null
+    def `find_notifier`:
+        %s does not have a notifier signal.: null
+        utf-8: null
+        (: null
+    class `PropertyBindingExpr`:
+        def `__init__`:
+            eval: null
+            <unknown>: null
+        def `set`:
+            Cannot set a value of an expression: null
+        def `bindTo`:
+            Cannot bind an expression: null
+    class `BindingManager`:
+        darwin: null
+    class `UnboundBindingWrapper`:
+        def `to`:
+            Can only call 'to' once.: null
+utils/qinvoke.py:
+    A: null
+    T1: null
+    T2: null
+    T3: null
+    T4: null
+    T5: null
+    T6: null
+utils/qobjref.py:
+    qobjref: null
+    qobjref_weak: null
+    Q: null
+    class `qobjref`:
+        __obj: null
+        __state: null
+        __weakref__: null
+        def `__repr__`:
+            'to ': null
+            dead: null
+            '<qobjref at 0x%x; ': null
+            >: null
+    class `qobjref_weak`:
+        __obj_ref: null
+        __state: null
+        __weakref__: null
+        def `__repr__`:
+            'to ': null
+            dead: null
+            '<qobjref_weak at 0x%x; ': null
+            >: null
+utils/qtcompat.py:
+    def `toPyObject`:
+        toPyObject is deprecated and will be removed.: null
+    def `qunwrap`:
+        qunwrap is deprecated and will be removed.: null
+    def `qwrap`:
+        qwrap is deprecated and will be removed.: null
+utils/redirect.py:
+    "'{}' is deprecated use contextlib.redirect_{stderr,stdin}.": null
+utils/settings.py:
+    config_slot: null
+    key: null
+    value_type: null
+    default_value: null
+    doc: null
+    class `_pickledvalue`:
+        def `__init__`:
+            "'_pickledvalue' instances should not be created": null
+    class `Settings`:
+        def `__init__`:
+            /: null
+        def `__key`:
+            /: null
+        def `__getitem__`:
+            {0!r} is a group: null
+        def `__setitem__`:
+            Expected {0!r} got {1!r}: null
+        def `__iter__`:
+            /: null
+        def `group`:
+            /: null
+        def `isgroup`:
+            {0!r} is not a valid key: null
+        def `customEvent`:
+            /: null
+    _T: null
+    def `QSettings_readArray`:
+        def `normalize_spec`:
+            len(spec) != 2: null
+utils/shtools.py:
+    def `python_process`:
+        nt: null
+        pythonw.exe: null
+        python.exe: null
+    def `__nt_kwargs_defaults`:
+        CREATE_NO_WINDOW: null
+        creationflags: null
+    def `python_run`:
+        nt: null
+        pythonw.exe: null
+        python.exe: null
+    def `create_process`:
+        nt: null
+    def `temp_named_file`:
+        utf-8: null
+        wb: null
+        wt: null
+utils/localization/__init__.py:
+    import 'orangecanvas.localization', not 'orangecanvas.utils.localization': null
+utils/localization/si.py:
+    import 'orangecanvas.localization.si', not 'orangecanvas.utils.localization.si': null
